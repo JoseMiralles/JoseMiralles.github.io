@@ -15,7 +15,7 @@ body
 {
     background-color: black;
     text-align: center;
-    padding: 2em;
+    padding: 0.5em;
 }
 
 .projects
@@ -31,30 +31,42 @@ body
 
 .white-line
 {
-    border-bottom: solid white;
+    border-bottom: solid white 3px;
+    margin-left: -8px;
+    margin-right: -8px;
 }
 
 .item-link
 {
     display: block;
-    padding:15px;
-    background-color:#ebebeb;
+    /*background-color:#ebebeb;*/
+    border: solid white 3px;
 }
 .item-link>.container
 {
-    display: block;
-    background-color:rgb(29, 29, 29);
+    display: inline-block;
+    padding: 0px;
 }
 
 .project-Logo
 {
-    display: inline-block;
-    width:25%;
+    float: left;
+    width: 25%;
 }
 
 .description
 {
-    display: inline-block;
     color:white;
-    width:auto;
+    display: block;
+    width: 75%;
+    float: left;
+    text-overflow:ellipsis;
+}
+.description>.title
+{
+    color: black;
+    background-color: white;
+    margin-top: 0px;
+    line-height: 1.5;
+    margin-top: -16px;
 }
