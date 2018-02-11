@@ -61,6 +61,7 @@ body
 {
     float: left;
     width: 20%;
+    object-fit: cover;
 }
 
 .description
@@ -83,4 +84,11 @@ body
 .description>*
 {
     padding-left: 2.3em;
+}
+
+.technologies-list
+{
+    border-bottom: solid white 3px;
+    text-align: center;
+    line-height: 1em;
 }
