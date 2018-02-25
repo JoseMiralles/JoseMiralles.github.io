@@ -1,0 +1,13 @@
+<body>
+  <h2>
+    Welcome to {{title}}!
+  </h2>
+  <div>
+    {{me.firstName}} {{me.lastName}}
+  </div>
+  
+  <h3>Web Development Skills</h3>
+  <li *ngFor='let skill of skills.webDevSkills'>
+    {{skill}}
+  </li>
+</body>
