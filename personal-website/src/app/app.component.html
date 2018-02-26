@@ -17,6 +17,15 @@
         <h1>My name is {{me.firstName}} {{me.lastName}}</h1>    
     </div>
 
+    <!-- Skills -->
+    <div class = 'container'>
+      <div class = 'row'>
+        <div class = 'col-md-6 col-sm-12 bordered' *ngFor='let skill of me.skills'>
+            <p class='mb-1'>{{skill.name}} <br/> {{skill.level}}</p>
+        </div>
+      </div>
+    </div>
+
     <!-- Projects -->
     <app-projects></app-projects>
 

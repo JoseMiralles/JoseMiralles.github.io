@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 
 export class ProjectsComponent implements OnInit {
 
-  projects: Projects[];
+  projects: Project[];
 
   constructor() { }
 
@@ -20,7 +20,7 @@ export class ProjectsComponent implements OnInit {
 //#region ------- CLASSES
 
 ///Represents a project.
-class Projects
+class Project
 {
   name: string;
   technologies: string[];
