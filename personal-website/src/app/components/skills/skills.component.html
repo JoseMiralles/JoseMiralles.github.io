@@ -1,0 +1,38 @@
+<!-- TODO: generate the HTML for each skill programatically and move all of the skills to the same array. -->
+
+<!-- Web Dev Skills -->
+<div class='container'>
+  <div class='row'>
+    <div class='col-md-3 col-sm-1 skillContainer' *ngFor='let skill of webSkills'>
+      <h6 class='mb-1'>{{skill.name}}</h6>
+      <p class='text-muted'>{{skill.level}}</p>
+    </div>
+  </div>
+</div>
+<!-- C# Skills -->
+<div class='container'>
+  <div class='row'>
+    <div class='col-md-3 col-sm-1 skillContainer' *ngFor='let skill of dotNetSkills'>
+      <h6 class='mb-1'>{{skill.name}}</h6>
+      <p class='text-muted'>{{skill.level}}</p>
+    </div>
+  </div>
+</div>
+<!-- Adobe Skills -->
+<div class='container'>
+  <div class='row'>
+    <div class='col-md-3 col-sm-1 skillContainer' *ngFor='let skill of adobeSkills'>
+      <h6 class='mb-1'>{{skill.name}}</h6>
+      <p class='text-muted'>{{skill.level}}</p>
+    </div>
+  </div>
+</div>
+<!-- Other Skills -->
+<div class='container'>
+  <div class='row'>
+    <div class='col-md-3 col-sm-1 skillContainer' *ngFor='let skill of otherSkills'>
+      <h6 class='mb-1'>{{skill.name}}</h6>
+      <p class='text-muted'>{{skill.level}}</p>
+    </div>
+  </div>
+</div>
