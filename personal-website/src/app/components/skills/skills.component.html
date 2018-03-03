@@ -1,38 +1,20 @@
-<!-- TODO: generate the HTML for each skill programatically and move all of the skills to the same array. -->
+<div class='container border-top'>
 
-<!-- Web Dev Skills -->
-<div class='container'>
+  <h2>Skills</h2>
+
   <div class='row'>
-    <div class='col-md-3 col-sm-1 skillContainer' *ngFor='let skill of webSkills'>
-      <h6 class='mb-1'>{{skill.name}}</h6>
-      <p class='text-muted'>{{skill.level}}</p>
+    <!-- Loop trough every one of the arrays. -->
+    <div class='col-lg-3 col-md-2 mb-1 mt-1' *ngFor='let array of mainArray'>
+      <!-- Loop trough each skill in the current array. -->
+      
+      <h6 class='list-group-item bg-secondary text-white'>{{ array[0].type }}</h6>
+
+        <ul class='list-group' *ngFor='let skill of array'>
+            <li class='list-group-item'>{{skill.name}}
+              <br>
+              <span class='text-muted'>{{skill.level}}</span></li>
+        </ul>
     </div>
   </div>
-</div>
-<!-- C# Skills -->
-<div class='container'>
-  <div class='row'>
-    <div class='col-md-3 col-sm-1 skillContainer' *ngFor='let skill of dotNetSkills'>
-      <h6 class='mb-1'>{{skill.name}}</h6>
-      <p class='text-muted'>{{skill.level}}</p>
-    </div>
-  </div>
-</div>
-<!-- Adobe Skills -->
-<div class='container'>
-  <div class='row'>
-    <div class='col-md-3 col-sm-1 skillContainer' *ngFor='let skill of adobeSkills'>
-      <h6 class='mb-1'>{{skill.name}}</h6>
-      <p class='text-muted'>{{skill.level}}</p>
-    </div>
-  </div>
-</div>
-<!-- Other Skills -->
-<div class='container'>
-  <div class='row'>
-    <div class='col-md-3 col-sm-1 skillContainer' *ngFor='let skill of otherSkills'>
-      <h6 class='mb-1'>{{skill.name}}</h6>
-      <p class='text-muted'>{{skill.level}}</p>
-    </div>
-  </div>
+
 </div>

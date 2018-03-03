@@ -5,23 +5,21 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.scss']
 })
+
 export class SkillsComponent implements OnInit {
 
-  webSkills = Array<Skill>();
-  dotNetSkills = Array<Skill>();
-  adobeSkills = Array<Skill>();
-  otherSkills = Array<Skill>();
+  mainArray = Array<Array<Skill>>();
 
   constructor() { }
 
   ngOnInit() {
-    this.populateSkillsArrays();
+    this.populateSkillsArray();
   }
 
   //Populates the arrays that contain my skills.
-  populateSkillsArrays()
+  populateSkillsArray()
   {//TODO: GET these from a remote JSON file.
-    this.webSkills = [
+    var webSkills = [
       {type: skillType.webDev, name: 'HTML5', level: skillLvl.intermediate},
       {type: skillType.webDev, name: 'JavaScript', level: skillLvl.beginner},
       {type: skillType.webDev, name: 'TypeScript', level: skillLvl.beginner},
@@ -30,21 +28,29 @@ export class SkillsComponent implements OnInit {
       {type: skillType.webDev, name: 'Bootstrap', level: skillLvl.beginner},
       {type: skillType.webDev, name: 'Sass', level: skillLvl.beginner},
     ];
-    this.dotNetSkills = [
+    var dotNetSkills = [
       {type: skillType.dotNet, name: 'C#|.NET', level: skillLvl.intermediate},
       {type: skillType.dotNet, name: 'Visual Studio', level: skillLvl.intermediate},
       {type: skillType.dotNet, name: 'Xamarin.Android', level: skillLvl.intermediate},
       {type: skillType.dotNet, name: 'Xamarin.iOS', level: skillLvl.beginner},
     ];
-    this.adobeSkills = [
+    var adobeSkills = [
       {type: skillType.adobe, name: 'Illustrator', level: skillLvl.intermediate},
       {type: skillType.adobe, name: 'Photoshop', level: skillLvl.intermediate},
       {type: skillType.adobe, name: 'After Effects', level: skillLvl.beginner}
     ];
-    this.otherSkills = [
+    var otherSkills = [
       {type: skillType.hetero,  name: 'Agile|SCRUM', level: skillLvl.intermediate},
       {type: skillType.hetero,  name: 'Responsive (Mobile First)', level: skillLvl.intermediate},
       {type: skillType.hetero,  name: 'Offline First', level: skillLvl.beginner}
+    ];
+
+    ///Enter these into the main array.
+    this.mainArray = [
+      webSkills,
+      dotNetSkills,
+      adobeSkills,
+      otherSkills
     ];
   }
 }
@@ -63,9 +69,9 @@ enum skillLvl {
 }
 enum skillType {
   dotNet = '.NET',
-  webDev = 'WEB',
-  adobe = 'ADOBE',
-  hetero = 'HETEROGENOUS'
+  webDev = 'Web',
+  adobe = 'Adobe',
+  hetero = 'Others'
 }
 enum color {
   blue = 'blue',
