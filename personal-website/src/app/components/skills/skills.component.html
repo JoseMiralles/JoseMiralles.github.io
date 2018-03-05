@@ -1,13 +1,11 @@
 <div class='container border-top'>
 
-  <h2>Skills</h2>
-
   <div class='row'>
     <!-- Loop trough every one of the arrays. -->
-    <div class='col-lg-3 col-md-2 mb-1 mt-1' *ngFor='let array of mainArray'>
+    <div class='col-lg-3 col-md-6 mb-1 mt-1' *ngFor='let array of mainArray'>
       <!-- Loop trough each skill in the current array. -->
       
-      <h6 class='list-group-item bg-secondary text-white'>{{ array[0].type }}</h6>
+      <h5 class='list-group-item bg-primary text-white' role='tab'>{{ array[0].type }}</h5>
 
         <ul class='list-group' *ngFor='let skill of array'>
             <li class='list-group-item'>{{skill.name}}
