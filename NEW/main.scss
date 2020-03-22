@@ -32,9 +32,13 @@ body{
         bottom: 0;
         width: 100vw;
         margin: 0;
-        font-size: $fifth;
-        margin-bottom: $fifth * -0.39;
+        font-size: 5rem;
+        margin-bottom: -1.9rem;
         font-family: Josefin;
+        @media (max-width: 480px) {
+            font-size: 4rem;
+            margin-bottom: -1.5rem;
+        }
     }
 }
 
