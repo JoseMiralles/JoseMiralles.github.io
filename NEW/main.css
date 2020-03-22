@@ -38,6 +38,7 @@ body {
 
 .page_section {
   height: 100vh;
+  width: 100vw;
 }
 
 .half_background {
@@ -46,6 +47,17 @@ body {
   bottom: 0;
   height: 61.8vh;
   width: 100vw;
+}
+
+.small_half {
+  height: 38.1924vh;
+}
+
+large_half {
+  height: 61.8vh;
+}
+
+.main_color {
   background-color: #537791;
 }
 

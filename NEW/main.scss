@@ -44,6 +44,7 @@ body{
 
 .page_section{
     height: 100vh;
+    width: 100vw;
 }
 
 .half_background{
@@ -52,6 +53,16 @@ body{
     bottom: 0;
     height: $first;
     width: 100vw;
+}
+
+.small_half{
+    height: $second;
+}
+large_half{
+    height: $first;
+}
+
+.main_color{
     background-color: $main_color;
 }
 
