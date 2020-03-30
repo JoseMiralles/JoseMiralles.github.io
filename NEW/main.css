@@ -10790,9 +10790,7 @@ body {
 
 .hero_title_container {
   position: relative;
-  left: 0;
-  top: 0;
-  height: 38.1924vh;
+  height: 23.6029vh;
   width: 100vw;
 }
 
@@ -10816,6 +10814,18 @@ body {
   }
 }
 
+.half_background {
+  min-height: 76.3971vh;
+  width: 100vw;
+  padding-top: 3.5rem;
+}
+
+@media (max-width: 480px) {
+  .half_background {
+    padding-top: 2rem;
+  }
+}
+
 .text_color_main {
   color: #537791;
 }
@@ -10829,19 +10839,12 @@ body {
   width: 100vw;
 }
 
-.half_background {
-  left: 0;
-  bottom: 0;
-  min-height: 61.8vh;
-  width: 100vw;
-}
-
 .small_half {
-  min-height: 38.1924vh;
+  min-height: 23.6029vh;
 }
 
-large_half {
-  min-height: 61.8vh;
+.large_half {
+  min-height: 76.3971vh;
 }
 
 .main_color {

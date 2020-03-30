@@ -14,6 +14,9 @@ $forth: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180;
 $fifth: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
 $sixth: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
 
+//This represents the standard size for the top part of each page section. This part contains the title. 
+$standard_top_size: $third;
+
 @font-face{
     font-family: Josefin;
     src: url(assets/fonts/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf);
@@ -37,9 +40,7 @@ body{
 
 .hero_title_container{
     position: relative;
-    left: 0;
-    top: 0;
-    height: $second;
+    height: $standard_top_size;
     width: 100vw;
     h1{
         white-space: nowrap;
@@ -58,6 +59,15 @@ body{
         }
     }
 }
+.half_background{
+    min-height: 100 - $standard_top_size;
+    width: 100vw;
+    padding-top: 3.5rem;
+    @media (max-width: 480px){
+        padding-top: 2rem;
+    }
+}
+
 .text_color_main{
     color: theme-color("primary");
 }
@@ -70,19 +80,11 @@ body{
     width: 100vw;
 }
 
-.half_background{
-    //position: absolute;
-    left: 0;
-    bottom: 0;
-    min-height: $first;
-    width: 100vw;
-}
-
 .small_half{
-    min-height: $second;
+    min-height: $standard_top_size;
 }
-large_half{
-    min-height: $first;
+.large_half{
+    min-height: 100 - $standard_top_size;
 }
 
 .main_color{
