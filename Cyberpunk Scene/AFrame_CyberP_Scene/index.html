@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello, WebVR! • A-Frame</title>
+    <meta name="description" content="Hello, WebVR! • A-Frame">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+
+  <body>
+    <a-scene background="color: dimgrey">
+
+        
+        <a-assets>
+            <a-asset-item id="main_scene" src="Cyberpunk_Scene.glb"></a-asset-item>
+            <video id="LargemonitorVideo" autoplay="true" loop="true" type="video/mp4" src="LargemonitorVideo.mp4"></video>
+          </a-assets>
+
+
+          <!-- 3D object Instances -->
+          <a-entity gltf-model="#main_scene" position="0 0 0"></a-entity>
+
+          <!-- Videos -->
+          <a-video src="#LargemonitorVideo" position="-1.722 1.283 -1.587" rotation="0 45.950 0" scale="1.010 1.010 1.010" width="1.45" height="0.7" play="true"></a-video>
+
+
+          <!-- CAMERA -->
+          <a-entity id="rig" position="0 0 -0.5">
+            <a-entity id="camera" position="0 1.6 0" camera look-controls></a-entity>
+          </a-entity>
+
+
+    </a-scene>
+  </body>
+
+</html>
