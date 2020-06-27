@@ -2,8 +2,8 @@
     "liveServer.settings.https":   
     {
     "enable": true, //set it true to enable the feature.  
-    "cert": "/Users/magic/Desktop/Blender Export/https/localhost.pem", //full path of the certificate  
-    "key": "/Users/magic/Desktop/Blender Export/https/localhost.key", //full path of the private key  
+    "cert": "/Users/magic/Documents/Projects/JoseMiralles.github.io/Cyberpunk Scene/AFrame_CyberP_Scene/https/localhost.pem", //full path of the certificate  
+    "key": "/Users/magic/Documents/Projects/JoseMiralles.github.io/Cyberpunk Scene/AFrame_CyberP_Scene/https/localhost.key", //full path of the private key  
     "passphrase": "123456"
     }
 }
