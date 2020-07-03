@@ -1,0 +1,136 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+$theme-colors: (
+  "primary": rgb(43, 43, 43),
+  "light": #fcfcfc,
+  //"light": #f7f6e7,
+  "dark": #537791
+);
+
+//These variables follow the golden ratio.
+$first: 100vh * 0.6180;
+$second: 100vh * 0.6180 * 0.6180;
+$third: 100vh * 0.6180 * 0.6180 * 0.6180;
+$forth: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180;
+$fifth: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
+$sixth: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
+$seventh: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
+$eigth: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
+$ninth: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
+$tenth: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
+
+//This represents the standard size for the top part of each page section. This part contains the title. 
+$standard_top_size: $third;
+
+@font-face{
+    font-family: Josefin;
+    src: url(assets/fonts/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: Caveat-Bold;
+    src: url(assets/fonts/Caveat/Caveat-Bold.ttf);
+}
+@font-face{
+    font-family: Permanent_Marker;
+    src: url(assets/fonts/Permanent_Marker/PermanentMarker-Regular.ttf);
+}
+@font-face{
+    font-family: Bebas_Neue;
+    src: url(assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+body{
+    background: theme-color("light");
+}
+
+.hero_title_container{
+    position: relative;
+    height: $first + $forth;
+    width: 100vw;
+    overflow: hidden;
+    h1{
+        white-space: nowrap;
+        overflow: hidden;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+        margin: 0;
+        font-size: 5rem;
+        margin-bottom: -1.7rem;
+        font-family: Bebas_Neue;
+        @media (max-width: 480px) {
+            font-size: 4rem;
+            margin-bottom: -1.3rem;
+        }
+    }
+    #A_Frame_Scene{
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+}
+.half_background{
+    min-height: 100 - $standard_top_size;
+    width: 100vw;
+    padding-top: $forth;
+    @media (max-width: 480px){
+        padding-top: 2rem;
+    }
+    .wrap_content{
+        min-height: 0px;
+    }
+}
+
+.light_line{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: theme-color("light");
+    height: 0.5px;
+}
+
+//SVG --------
+.cls-1 {
+    fill: none;
+    stroke: theme-color("light");
+    stroke-miterlimit: 10;
+    stroke-width: 6px;
+  }
+    .arm{
+    fill: theme-color("light");;
+    stroke: none;
+    }
+  .cls-2 {
+    fill: theme-color("light");;
+  }
+
+.text_color_main{
+    color: theme-color("primary");
+    text-shadow: 1px 1px 0px theme-color('light');
+}
+.text_color_base{
+    color: theme-color("light");
+}
+
+.page_section{
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.small_half{
+    min-height: $standard_top_size;
+    padding-top: $forth;
+}
+.large_half{
+    min-height: 100 - $standard_top_size;
+    padding-top: $forth;
+}
+
+.main_color{
+    background-color: theme-color("primary");
+}
+
+.iframe_logo{
+    border:none;
+}
