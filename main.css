@@ -10824,7 +10824,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 @font-face {
-  font-family: Caveat-Bold;
+  font-family: Caveat_Bold;
   src: url(assets/fonts/Caveat/Caveat-Bold.ttf);
 }
 
@@ -10839,11 +10839,78 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 body {
-  background: #fcfcfc;
+  background: #EAF2E3;
 }
 
 .page_section {
-  width: 100vw;
   height: 100vh;
+  position: relative;
+}
+
+.top_section #Title_text {
+  color: #F25757;
+  position: absolute;
+  bottom: 5.57097%;
+  font-family: Bebas_Neue;
+  line-height: 3rem;
+  width: 100%;
+  text-align: center;
+  font-size: 7rem;
+  text-shadow: 3px -3px 0px #ee1e1e;
+}
+
+.top_section #A_Frame_Scene {
+  position: absolute;
+  border: none;
+  left: 1.31491%;
+  width: 97.37018%;
+  bottom: 14.5895%;
+  height: 82.78068%;
+  -webkit-box-shadow: 5px -5px 0px 0px #ee1e1e;
+          box-shadow: 5px -5px 0px 0px #ee1e1e;
+}
+
+.top_section svg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.top_section #poly_3 {
+  height: 61.8%;
+}
+
+.top_section #poly_3 polygon {
+  fill: #3E4E50;
+}
+
+.top_section #poly_2 {
+  height: 38.1924%;
+}
+
+.top_section #poly_2 polygon {
+  fill: #4c5f62;
+}
+
+.top_section #poly_1 {
+  height: 23.6029%;
+}
+
+.top_section #poly_1 polygon {
+  fill: #597073;
+}
+
+.top_section #poly_flat {
+  height: 5.57097%;
+}
+
+.top_section #poly_flat polygon {
+  fill: #F25757;
+}
+
+.top_section #poly_flat_Extrusion {
+  height: 6.07097%;
+  fill: #ee1e1e;
 }
 /*# sourceMappingURL=main.css.map */
