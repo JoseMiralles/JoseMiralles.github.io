@@ -10862,12 +10862,12 @@ body {
 .top_section #A_Frame_Scene {
   position: absolute;
   border: none;
-  left: 1.31491%;
-  width: 97.37018%;
+  left: 2.12769%;
+  width: 95.74463%;
   bottom: 14.5895%;
-  height: 82.78068%;
-  -webkit-box-shadow: 5px -5px 0px 0px #ee1e1e;
-          box-shadow: 5px -5px 0px 0px #ee1e1e;
+  height: 81.15513%;
+  -webkit-box-shadow: 0px 0px 5px 0px black;
+  box-shadow: 0px 0px 7px 0px black;
 }
 
 .top_section svg {
