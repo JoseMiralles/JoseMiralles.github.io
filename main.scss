@@ -5,7 +5,7 @@ $theme-colors: (
   "light": #EAF2E3,
   "dark": #3E4E50
 );
-$primary_extrusion_color: darken($color: theme-color("dark"), $amount: 12%);
+$primary_extrusion_color: darken($color: theme-color("dark"), $amount: 0%);
 $dark_extrusion_color: darken($color: theme-color("light"), $amount: 12%);
 
 //These variables follow the golden ratio.
@@ -117,8 +117,9 @@ body{
       background: theme-color("primary");
       padding: 1rem 2rem 1rem 2rem;
       border-bottom-right-radius: 1rem;
-      border-right: solid $dark_extrusion_color 3px;
-
+      border-right: solid darken($color: theme-color("primary"), $amount: 5%) 3px;
+      z-index: 999999;
+      position: absolute;
       a{
         color: theme-color("light");
         text-decoration: none;

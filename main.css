@@ -10860,7 +10860,7 @@ body {
   width: 100%;
   text-align: center;
   font-size: 7rem;
-  text-shadow: 3px -3px 0px #232c2e;
+  text-shadow: 3px -3px 0px #3e4e50;
 }
 
 .top_section #A_Frame_Scene {
@@ -10915,14 +10915,16 @@ body {
 
 .top_section #poly_flat_Extrusion {
   height: 6.07097%;
-  fill: #232c2e;
+  fill: #3e4e50;
 }
 
 .top_section #Enter_VR_Button_Wrapper {
   background: #F25757;
   padding: 1rem 2rem 1rem 2rem;
   border-bottom-right-radius: 1rem;
-  border-right: solid #cbdfb9 3px;
+  border-right: solid #f03f3f 3px;
+  z-index: 999999;
+  position: absolute;
 }
 
 .top_section #Enter_VR_Button_Wrapper a {
