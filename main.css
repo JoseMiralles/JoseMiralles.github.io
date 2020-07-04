@@ -10847,8 +10847,12 @@ body {
   position: relative;
 }
 
+.top_section {
+  background: #F25757;
+}
+
 .top_section #Title_text {
-  color: #F25757;
+  color: #EAF2E3;
   position: absolute;
   bottom: 5.57097%;
   font-family: Bebas_Neue;
@@ -10856,7 +10860,7 @@ body {
   width: 100%;
   text-align: center;
   font-size: 7rem;
-  text-shadow: 3px -3px 0px #ee1e1e;
+  text-shadow: 3px -3px 0px #232c2e;
 }
 
 .top_section #A_Frame_Scene {
@@ -10906,11 +10910,11 @@ body {
 }
 
 .top_section #poly_flat polygon {
-  fill: #F25757;
+  fill: #EAF2E3;
 }
 
 .top_section #poly_flat_Extrusion {
   height: 6.07097%;
-  fill: #ee1e1e;
+  fill: #232c2e;
 }
 /*# sourceMappingURL=main.css.map */

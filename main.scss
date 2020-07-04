@@ -5,7 +5,7 @@ $theme-colors: (
   "light": #EAF2E3,
   "dark": #3E4E50
 );
-$primary_extrusion_color: darken($color: theme-color("primary"), $amount: 12%);
+$primary_extrusion_color: darken($color: theme-color("dark"), $amount: 12%);
 $dark_extrusion_color: lighten($color: theme-color("light"), $amount: 12%);
 
 //These variables follow the golden ratio.
@@ -48,8 +48,10 @@ body{
 
 .top_section{
 
+    background: theme-color("primary");
+
     #Title_text{
-        color: theme-color("primary");
+        color: theme-color("light");
         position: absolute;
         bottom: $sixth;
         font-family: Bebas_Neue;
@@ -102,7 +104,7 @@ body{
         height: $sixth;
         polygon{
             //fill: lighten($color: theme-color("dark"), $amount: 18.3%);
-            fill: theme-color("primary");
+            fill: theme-color("light");
         }
     }
     #poly_flat_Extrusion{
