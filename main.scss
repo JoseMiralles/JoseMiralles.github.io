@@ -48,7 +48,7 @@ body{
 
 .top_section{
 
-    background: theme-color("primary");
+    background: darken($color: theme-color("dark"), $amount: 12%);
 
     #Title_text{
         color: theme-color("light");
