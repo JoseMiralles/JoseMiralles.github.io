@@ -21,7 +21,7 @@
       <polygon points="0,0 0,100 100,100 100,61.80" />
     </svg>
 
-    <!-- 3D Scene (injecting instead of using iframe because of issues on android.)
+    <!-- 3D Scene (in-line instead of using an iframe because of issues going fullscreen.)
     <iframe id="A_Frame_Scene" allowfullscreen="yes" allowvr="yes" src="Cyberpunk Scene\AFrame_CyberP_Scene\index.html"></iframe> -->
     <div id="A_Frame_Scene">
       <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
@@ -39,22 +39,6 @@
           });
         });
       </script>
-
-      <style>
-        #Enter_VR_Button_Wrapper {
-          background: #F25757;
-          padding: 1rem 2rem 1rem 2rem;
-          border-bottom-right-radius: 1rem;
-          border-right: solid #ee1e1e 3px;
-        }
-
-        #Enter_VR_Button_Wrapper>a {
-          color: white;
-          text-decoration: none;
-          font-size: 1.5rem;
-          font-family: Tahoma, Geneva, sans-serif;
-        }
-      </style>
       <a-scene embedded background="color: dimgrey" Renderer="foveationLevel: 2; highRefreshRate: true;"
         vr-mode-ui="enterVRButton: #myEnterVRButton;">
 

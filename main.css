@@ -10868,8 +10868,8 @@ body {
   border: none;
   left: 2.12769%;
   width: 95.74463%;
-  bottom: 14.5895%;
-  height: 81.15513%;
+  bottom: 9.01631%;
+  height: 86.72832%;
   -webkit-box-shadow: 0px 0px 5px 0px black;
   box-shadow: 0px 0px 7px 0px black;
 }
@@ -10882,7 +10882,7 @@ body {
 }
 
 .top_section #poly_3 {
-  height: 61.8%;
+  height: 38.1924%;
 }
 
 .top_section #poly_3 polygon {
@@ -10890,7 +10890,7 @@ body {
 }
 
 .top_section #poly_2 {
-  height: 38.1924%;
+  height: 23.6029%;
 }
 
 .top_section #poly_2 polygon {
@@ -10898,7 +10898,7 @@ body {
 }
 
 .top_section #poly_1 {
-  height: 23.6029%;
+  height: 14.58659%;
 }
 
 .top_section #poly_1 polygon {
@@ -10916,5 +10916,19 @@ body {
 .top_section #poly_flat_Extrusion {
   height: 6.07097%;
   fill: #232c2e;
+}
+
+.top_section #Enter_VR_Button_Wrapper {
+  background: #F25757;
+  padding: 1rem 2rem 1rem 2rem;
+  border-bottom-right-radius: 1rem;
+  border-right: solid #cbdfb9 3px;
+}
+
+.top_section #Enter_VR_Button_Wrapper a {
+  color: #EAF2E3;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: Tahoma, Geneva, sans-serif;
 }
 /*# sourceMappingURL=main.css.map */

@@ -6,7 +6,7 @@ $theme-colors: (
   "dark": #3E4E50
 );
 $primary_extrusion_color: darken($color: theme-color("dark"), $amount: 12%);
-$dark_extrusion_color: lighten($color: theme-color("light"), $amount: 12%);
+$dark_extrusion_color: darken($color: theme-color("light"), $amount: 12%);
 
 //These variables follow the golden ratio.
 $first: 100% * 0.6180;
@@ -67,8 +67,8 @@ body{
         border:none;
         left: $margin_size;
         width: 100% - ($margin_size * 2);
-        bottom: $second * (1 - 0.618);
-        height: 100% - ($second * (1 - 0.618)) - $margin_size * 2;
+        bottom: $third * (1 - 0.618);
+        height: 100% - ($third * (1 - 0.618)) - $margin_size * 2;
         -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
         -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
         box-shadow: 0px 0px 7px 0px rgba(0,0,0,1);
@@ -83,19 +83,19 @@ body{
         bottom: 0;
     }
     #poly_3{
-        height: $first;
+        height: $second;
         polygon{
             fill: theme-color("dark");
         }
     }
     #poly_2{
-        height: $second;
+        height: $third;
         polygon{
             fill: lighten($color: theme-color("dark"), $amount: 6.1%);
         }
     }
     #poly_1{
-        height: $third;
+        height: $forth;
         polygon{
             fill: lighten($color: theme-color("dark"), $amount: 12.2%);
         }
@@ -110,5 +110,20 @@ body{
     #poly_flat_Extrusion{
         height: $sixth + 0.5%;
         fill: $primary_extrusion_color;
+    }
+
+    //VR Button
+    #Enter_VR_Button_Wrapper {
+      background: theme-color("primary");
+      padding: 1rem 2rem 1rem 2rem;
+      border-bottom-right-radius: 1rem;
+      border-right: solid $dark_extrusion_color 3px;
+
+      a{
+        color: theme-color("light");
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-family: Tahoma, Geneva, sans-serif;
+      }
     }
 }
