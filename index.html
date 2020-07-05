@@ -15,13 +15,21 @@
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="main.css" />
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+
+  <!-- A-Frame -->
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
+  <script src="main.js"></script>
 </head>
 
 <body>
 
   <!-- Title and 3D Scene -->
   <div class="page_section top_section">
-    <svg id="poly_3" viewBox="0 0 100 100" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    <svg id="poly_3" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="none">
       <polygon points="0,0 0,100 100,100 100,61.80" />
     </svg>
@@ -29,21 +37,6 @@
     <!-- 3D Scene (in-line instead of using an iframe because of issues going fullscreen.)
     <iframe id="A_Frame_Scene" allowfullscreen="yes" allowvr="yes" src="Cyberpunk Scene\AFrame_CyberP_Scene\index.html"></iframe> -->
     <div id="A_Frame_Scene">
-      <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          // Listen for when a user enters VR.
-          document.querySelector('a-scene').addEventListener('enter-vr', function () {
-            // Check if user is on mobile.
-            if (AFRAME.utils.device.isMobile()) {
-              // Remove expensive elements from scene if in mobile when entering VR.
-              document.querySelectorAll('.Remove_from_mobile_VR').forEach(element => {
-                element.parentNode.removeChild(element);
-              });
-            }
-          });
-        });
-      </script>
       <a-scene embedded background="color: dimgrey" Renderer="foveationLevel: 2; highRefreshRate: true;"
         vr-mode-ui="enterVRButton: #myEnterVRButton;">
 
@@ -112,21 +105,25 @@
       </a-scene>
     </div>
 
-    <svg id="poly_2" viewBox="0 0 100 100" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    <svg id="poly_2" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="none">
       <polygon points="0,0 0,100 100,100 100,61.80" />
     </svg>
-    <svg id="poly_1" viewBox="0 0 100 100" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    <svg id="poly_1" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="none">
       <polygon points="0,0 0,100 100,100 100,61.80" />
     </svg>
     <!-- Text 
-    <svg id="poly_flat_extrusion" viewBox="0 0 100 100" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    <svg id="poly_flat_extrusion" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg"
     preserveAspectRatio="none">
     <polygon points="0,0 0,100 100,100 100,0" />
     </svg> -->
+    <svg id="poly_flat_extrusion" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    preserveAspectRatio="none">
+    <polygon points="0,0 0,100 100,100 100,0" />
+    </svg>
     <h1 id="Title_text">José Miralles</h1>
-    <svg id="poly_flat" viewBox="0 0 100 100" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    <svg id="poly_flat" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="none">
       <polygon points="0,0 0,100 100,100 100,0" />
     </svg>
