@@ -51,11 +51,28 @@ body{
 
     .section_title_wrapper{
 
-        margin-top: 10vh;
-        margin-bottom: 10vh;
+        margin-bottom: $seventh;
+        height: $second;
+        position: relative;
 
         h1{
             text-align: center;
+            width: 100%;
+            line-height: 2rem;
+            position: absolute;
+            bottom: 0;
+            font-family: Bebas_Neue;
+            text-align: center;
+            padding-left: 1rem;
+            font-size: 5rem;
+
+            @media (max-width: 518px){
+                padding-left: 0rem;
+                font-size: 4rem;
+                text-align: left;
+                line-height: 2.8rem;
+                bottom: -0.8rem;
+            }
         }
     }
 
@@ -171,9 +188,31 @@ body{
 .light_section{
     background: theme-color("light");
     color: darken($color: theme-color("dark"), $amount: 0%);
+
+    .section_title_wrapper{
+        background: theme-color("dark");
+        color: theme-color("light");
+
+        h1{
+            &::before, &::after{
+                border-color: theme-color("light");
+            }
+        }
+    }
 }
 
 .dark_section{
     background: theme-color("dark");
     color: theme-color("light");
+
+    .section_title_wrapper{
+        background: theme-color("light");
+        color: theme-color("dark");
+
+        h1{
+            &::before, &::after{
+                border-color: theme-color("dark");
+            }
+        }
+    }
 }
