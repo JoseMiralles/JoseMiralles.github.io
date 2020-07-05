@@ -10839,7 +10839,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 body {
-  background: #EAF2E3;
+  background: white;
   position: unset;
 }
 
@@ -10849,12 +10849,21 @@ body {
   overflow: hidden;
 }
 
+.page_section .section_title_wrapper {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.page_section .section_title_wrapper h1 {
+  text-align: center;
+}
+
 .top_section {
   background: #3f4c45;
 }
 
 .top_section #Title_text {
-  color: #EAF2E3;
+  color: white;
   position: absolute;
   bottom: 5.57097%;
   font-family: Bebas_Neue;
@@ -10923,7 +10932,7 @@ body {
 }
 
 .top_section #poly_flat polygon {
-  fill: #EAF2E3;
+  fill: white;
 }
 
 .top_section #poly_flat_extrusion {
@@ -10942,9 +10951,19 @@ body {
 }
 
 .top_section #Enter_VR_Button_Wrapper a {
-  color: #EAF2E3;
+  color: white;
   text-decoration: none;
   font-size: 1.5rem;
   font-family: Tahoma, Geneva, sans-serif;
+}
+
+.light_section {
+  background: white;
+  color: #3f4c45;
+}
+
+.dark_section {
+  background: #5b6d63;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */

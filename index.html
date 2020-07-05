@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta property='og:title' content='Jose Miralles - Developer'/>
-  <meta property='og:image' content='https://josemiralles.github.io/assets/personal_site_meta_image.png'/>
-  <meta property='og:description' content='Personal site of Jose Miralles.'/>
+  <meta property='og:title' content='Jose Miralles - Developer' />
+  <meta property='og:image' content='https://josemiralles.github.io/assets/personal_site_meta_image.png' />
+  <meta property='og:description' content='Personal site of Jose Miralles.' />
 
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>Jose Miralles - Developer</title>
@@ -29,16 +29,15 @@
 
   <!-- Title and 3D Scene -->
   <div class="page_section top_section">
-    <svg id="poly_3" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg"
-      preserveAspectRatio="none">
+    <svg id="poly_3" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
       <polygon points="0,0 0,100 100,100 100,61.80" />
     </svg>
 
     <!-- 3D Scene (in-line instead of using an iframe because of issues going fullscreen.)
     <iframe id="A_Frame_Scene" allowfullscreen="yes" allowvr="yes" src="Cyberpunk Scene\AFrame_CyberP_Scene\index.html"></iframe> -->
     <div id="A_Frame_Scene">
-      <a-scene loading-screen="backgroundColor: none" embedded background="color: dimgrey" Renderer="foveationLevel: 2; highRefreshRate: true;"
-        vr-mode-ui="enterVRButton: #myEnterVRButton;">
+      <a-scene loading-screen="backgroundColor: none" embedded background="color: dimgrey"
+        Renderer="foveationLevel: 2; highRefreshRate: true;" vr-mode-ui="enterVRButton: #myEnterVRButton;">
 
         <!-- Asset Declarations -->
         <a-assets>
@@ -82,7 +81,8 @@
            -->
 
         <!-- Giant screen poem -->
-        <a-image src="#kipling-if-poem-image" position="2.436 1.630 0.130" rotation="0 -90 0" scale="4.050 1.890 1"></a-image>
+        <a-image src="#kipling-if-poem-image" position="2.436 1.630 0.130" rotation="0 -90 0" scale="4.050 1.890 1">
+        </a-image>
 
         <!-- Rig that controls the initial X/Y position of the camera and the hands. -->
         <a-entity id="rig" position="1 0 0">
@@ -105,12 +105,10 @@
       </a-scene>
     </div>
 
-    <svg id="poly_2" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg"
-      preserveAspectRatio="none">
+    <svg id="poly_2" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
       <polygon points="0,0 0,100 100,100 100,61.80" />
     </svg>
-    <svg id="poly_1" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg"
-      preserveAspectRatio="none">
+    <svg id="poly_1" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
       <polygon points="0,0 0,100 100,100 100,61.80" />
     </svg>
     <!-- Text 
@@ -119,8 +117,8 @@
     <polygon points="0,0 0,100 100,100 100,0" />
     </svg> -->
     <svg id="poly_flat_extrusion" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg"
-    preserveAspectRatio="none">
-    <polygon points="0,0 0,100 100,100 100,0" />
+      preserveAspectRatio="none">
+      <polygon points="0,0 0,100 100,100 100,0" />
     </svg>
     <h1 id="Title_text">José Miralles</h1>
     <svg id="poly_flat" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -129,7 +127,37 @@
     </svg>
   </div>
 
-  <div class="page_section"></div>
+  <!-- Professional eperience. -->
+  <div class="page_section light_section">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12 section_title_wrapper">
+          <h1 class="section_title"> --- Professional Experience --- </h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-4"><iframe src="MP_logo.html" frameborder="0" style="overflow: hidden;"
+            scrolling="no"></iframe></div>
+        <div class="col-lg-6">
+          <h2 class="section_subtitle">Maxxx Potential</h2>
+          <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+            rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+            explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+            magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+            dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+            dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
+            corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
+            reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum
+            fugiat quo voluptas nulla pariatur?"</p>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+
+    </div>
+  </div>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"

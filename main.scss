@@ -2,7 +2,8 @@
 
 $theme-colors: (
   "primary": #F25757,
-  "light": #EAF2E3,
+  //"light": #EAF2E3,
+  "light": white,
   "dark": #5b6d63,
   "none": transparent
 );
@@ -47,6 +48,19 @@ body{
     height: 100vh;
     position: relative;
     overflow: hidden;
+
+    .section_title_wrapper{
+
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+
+        h1{
+            text-align: center;
+        }
+    }
+
+    .section_subtitle{
+    }
 }
 
 // This section includes the 3D scene, and the Title.
@@ -139,4 +153,14 @@ body{
         font-family: Tahoma, Geneva, sans-serif;
       }
     }
+}
+
+.light_section{
+    background: theme-color("light");
+    color: darken($color: theme-color("dark"), $amount: 12%);
+}
+
+.dark_section{
+    background: theme-color("dark");
+    color: theme-color("light");
 }
