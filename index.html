@@ -47,9 +47,11 @@
           <a-asset-item id="main_scene" src="Cyberpunk Scene\AFrame_CyberP_Scene\Cyberpunk_Scene.glb"></a-asset-item>
           <!-- Video Assets -->
           <video class="Remove_from_mobile_VR" id="LargemonitorVideo" autoplay="true" loop="true" type="video/mp4"
-            src="Cyberpunk Scene\AFrame_CyberP_Scene\LargemonitorVideo.mp4" webkit-playsinline playsinline preload="auto" autoload="true"></video>
-          <video class="Remove_from_mobile_VR" id="SmallMonitorVideo" autoplay="true" loop="true" type="video/mp4"
-            src="Cyberpunk Scene\AFrame_CyberP_Scene\LargemonitorVideo.mp4" webkit-playsinline playsinline preload="auto" autoload="true"></video>
+            src="Cyberpunk Scene\AFrame_CyberP_Scene\LargemonitorVideo.mp4" webkit-playsinline playsinline
+            preload="auto" autoload="true"></video>
+          <!-- <video class="Remove_from_mobile_VR" id="SmallMonitorVideo" autoplay="true" loop="true" type="video/mp4"
+            src="Cyberpunk Scene\AFrame_CyberP_Scene\LargemonitorVideo.mp4" webkit-playsinline playsinline preload="auto" autoload="true"></video> -->
+          <img id="kipling-if-poem-image" src="Cyberpunk Scene\if-kipling.png">
         </a-assets>
 
         <!-- Standard ligthing -->
@@ -67,22 +69,25 @@
         <!-- Large Monitor -->
         <a-video class="LargeMonitorVideo Remove_from_mobile_VR" src="#LargemonitorVideo" position="-1.552 1.157 -1.430"
           rotation="0 45.950 0" scale="0.910 0.910 0.00001" width="1.45" height="0.7" play="true"></a-video>
-        <!-- Small Monitors, right side (Ordered from right to left.) -->
+        <!-- Small Monitors, right side (Ordered from right to left.)
         <a-video class="SmallMonitorVideo Remove_from_mobile_VR" src="#SmallMonitorVideo" position="-0.109 1.005 -1.774"
           rotation="0 1.130 0" scale="0.900 0.900 0.00001" width="0.45" height="0.45" play="true"></a-video>
         <a-video class="SmallMonitorVideo Remove_from_mobile_VR" src="#SmallMonitorVideo" position="-0.398 1.479 -1.814"
           rotation="0 -12.210 0" scale="0.900 0.900 0.00001" width="0.45" height="0.45" play="true"></a-video>
         <a-video class="SmallMonitorVideo Remove_from_mobile_VR" src="#SmallMonitorVideo" position="-0.587 1.005 -1.774"
           rotation="0 1.130 0" scale="0.900 0.900 0.00001" width="0.45" height="0.45" play="true"></a-video>
-        <!-- Small Monitors, Left side (Ordered from top to Bottom.) -->
+        <!-- Small Monitors, Left side (Ordered from top to Bottom.)
         <a-video class="SmallMonitorVideo Remove_from_mobile_VR" src="#SmallMonitorVideo" position="-1.929 1.005 -0.526"
           rotation="0 91.160 0" scale="0.900 0.900 0.00001" width="0.45" height="0.45" play="true"></a-video>
         <a-video class="SmallMonitorVideo Remove_from_mobile_VR" src="#SmallMonitorVideo" position="-1.999 1.466 -0.545"
           rotation="0 104.480 0" scale="0.900 0.900 0.00001" width="0.45" height="0.45" play="true"></a-video>
+           -->
 
+        <!-- Giant screen poem -->
+        <a-image src="#kipling-if-poem-image" position="2.436 1.630 0.130" rotation="0 -90 0" scale="4.050 1.890 1"></a-image>
 
         <!-- Rig that controls the initial X/Y position of the camera and the hands. -->
-        <a-entity id="rig" position="0 0 -0.5">
+        <a-entity id="rig" position="1 0 0">
 
           <!-- CAMERA -->
           <a-entity id="camera" position="0 1.6 0" camera look-controls></a-entity>
@@ -110,7 +115,11 @@
       preserveAspectRatio="none">
       <polygon points="0,0 0,100 100,100 100,61.80" />
     </svg>
-    <!-- Text -->
+    <!-- Text 
+    <svg id="poly_flat_extrusion" viewBox="0 0 100 100" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    preserveAspectRatio="none">
+    <polygon points="0,0 0,100 100,100 100,0" />
+    </svg> -->
     <h1 id="Title_text">José Miralles</h1>
     <svg id="poly_flat" viewBox="0 0 100 100" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="none">

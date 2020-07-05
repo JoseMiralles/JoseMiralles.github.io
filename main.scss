@@ -47,6 +47,7 @@ body{
     position: relative;
 }
 
+// This section includes the 3D scene, and the Title.
 .top_section{
 
     background: darken($color: theme-color("dark"), $amount: 12%);
@@ -61,6 +62,12 @@ body{
         text-align: center;
         font-size: 7rem;
         text-shadow: 3px -3px 0px $primary_extrusion_color;
+        @media (max-width: 518px) {
+            text-align: left;
+            line-height: 4.5rem;
+            bottom: 3.57097%;
+            overflow: visible;
+        }
     }
     #A_Frame_Scene{
         $margin_size: $eigth;
@@ -103,12 +110,18 @@ body{
     }
     #poly_flat{
         height: $sixth;
-        box-shadow: 0px 0px 0px 3px $primary_extrusion_color;
+        box-shadow: 0px -3px 0px 0.3px $primary_extrusion_color;
         polygon{
             //fill: lighten($color: theme-color("dark"), $amount: 18.3%);
             fill: theme-color("light");
         }
     }
+    /*
+    #poly_flat_extrusion{
+        height: $sixth;
+        box-shadow: 0px -3px 0px 1px $primary_extrusion_color;
+    }
+    */
 
     //VR Button
     #Enter_VR_Button_Wrapper {
