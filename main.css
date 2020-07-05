@@ -10848,7 +10848,7 @@ body {
 }
 
 .top_section {
-  background: #232c2e;
+  background: #3f4c45;
 }
 
 .top_section #Title_text {
@@ -10860,7 +10860,7 @@ body {
   width: 100%;
   text-align: center;
   font-size: 7rem;
-  text-shadow: 3px -3px 0px #3e4e50;
+  text-shadow: 3px -3px 0px #5b6d63;
 }
 
 .top_section #A_Frame_Scene {
@@ -10871,7 +10871,7 @@ body {
   bottom: 9.01631%;
   height: 86.72832%;
   -webkit-box-shadow: 0px 0px 5px 0px black;
-  box-shadow: 0px 0px 7px 0px black;
+  box-shadow: 0px 0px 0px 1px #728678;
 }
 
 .top_section svg {
@@ -10886,7 +10886,7 @@ body {
 }
 
 .top_section #poly_3 polygon {
-  fill: #3E4E50;
+  fill: #5b6d63;
 }
 
 .top_section #poly_2 {
@@ -10894,7 +10894,7 @@ body {
 }
 
 .top_section #poly_2 polygon {
-  fill: #4c5f62;
+  fill: #697e72;
 }
 
 .top_section #poly_1 {
@@ -10902,27 +10902,24 @@ body {
 }
 
 .top_section #poly_1 polygon {
-  fill: #597073;
+  fill: #788e82;
 }
 
 .top_section #poly_flat {
   height: 5.57097%;
+  -webkit-box-shadow: 0px 0px 0px 3px #5b6d63;
+          box-shadow: 0px 0px 0px 3px #5b6d63;
 }
 
 .top_section #poly_flat polygon {
   fill: #EAF2E3;
 }
 
-.top_section #poly_flat_Extrusion {
-  height: 6.07097%;
-  fill: #3e4e50;
-}
-
 .top_section #Enter_VR_Button_Wrapper {
-  background: #F25757;
+  background: #5b6d63;
   padding: 1rem 2rem 1rem 2rem;
   border-bottom-right-radius: 1rem;
-  border-right: solid #f03f3f 3px;
+  border-right: solid #4f5f56 3px;
   z-index: 999999;
   position: absolute;
 }

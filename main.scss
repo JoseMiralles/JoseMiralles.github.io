@@ -3,7 +3,8 @@
 $theme-colors: (
   "primary": #F25757,
   "light": #EAF2E3,
-  "dark": #3E4E50
+  "dark": #5b6d63,
+  "none": transparent
 );
 $primary_extrusion_color: darken($color: theme-color("dark"), $amount: 0%);
 $dark_extrusion_color: darken($color: theme-color("light"), $amount: 12%);
@@ -102,22 +103,19 @@ body{
     }
     #poly_flat{
         height: $sixth;
+        box-shadow: 0px 0px 0px 3px $primary_extrusion_color;
         polygon{
             //fill: lighten($color: theme-color("dark"), $amount: 18.3%);
             fill: theme-color("light");
         }
     }
-    #poly_flat_Extrusion{
-        height: $sixth + 0.5%;
-        fill: $primary_extrusion_color;
-    }
 
     //VR Button
     #Enter_VR_Button_Wrapper {
-      background: theme-color("primary");
+      background: theme-color("dark");
       padding: 1rem 2rem 1rem 2rem;
       border-bottom-right-radius: 1rem;
-      border-right: solid darken($color: theme-color("primary"), $amount: 5%) 3px;
+      border-right: solid darken($color: theme-color("dark"), $amount: 5%) 3px;
       z-index: 999999;
       position: absolute;
       a{
