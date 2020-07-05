@@ -35,6 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
             onComplete: function() {target_element.style.height = height_percentage}
         }).delay((i/10));
     }
-    gsap.from("#A_Frame_Scene", {duration: 2.5, bottom: "-100%", ease: "expo.out"}).delay(1);
+    gsap.from(".bottom_gradient", {duration: 10, opacity: 0, ease: "expo.out"}).delay(1);
     topSection.style.display = "block"; // Show parent of polygons again.
 });

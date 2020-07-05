@@ -10859,7 +10859,7 @@ body {
 }
 
 .top_section {
-  background: #3f4c45;
+  background: #232c2e;
 }
 
 .top_section #Title_text {
@@ -10869,7 +10869,8 @@ body {
   font-family: Bebas_Neue;
   line-height: 3rem;
   width: 100%;
-  text-align: center;
+  text-align: left;
+  padding-left: 1rem;
   font-size: 7rem;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   max-width: 100%;
@@ -10888,12 +10889,10 @@ body {
 .top_section #A_Frame_Scene {
   position: absolute;
   border: none;
-  left: 2.12769%;
-  width: 95.74463%;
-  bottom: 9.01631%;
-  height: 86.72832%;
-  -webkit-box-shadow: 0px 0px 5px 0px black;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
 }
 
 .top_section svg {
@@ -10904,27 +10903,30 @@ body {
 }
 
 .top_section #poly_3 {
-  height: 61.8%;
+  height: 38.1924%;
+  width: 23.6029%;
 }
 
 .top_section #poly_3 polygon {
-  fill: #5b6d63;
+  fill: #3E4E50;
 }
 
 .top_section #poly_2 {
   height: 23.6029%;
+  width: 38.1924%;
 }
 
 .top_section #poly_2 polygon {
-  fill: #697e72;
+  fill: #4c5f62;
 }
 
 .top_section #poly_1 {
   height: 14.58659%;
+  width: 61.8%;
 }
 
 .top_section #poly_1 polygon {
-  fill: #788e82;
+  fill: #597073;
 }
 
 .top_section #poly_flat {
@@ -10941,11 +10943,27 @@ body {
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
+.top_section .bottom_gradient {
+  height: 38.1924%;
+  width: 100%;
+  background: black;
+  position: absolute;
+  bottom: 0;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+6,000000+100&0+0,1+100 */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(6%, rgba(0, 0, 0, 0.06)), to(black));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.06) 6%, black 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+  /* IE6-9 */
+}
+
 .top_section #Enter_VR_Button_Wrapper {
-  background: #5b6d63;
+  background: #3E4E50;
   padding: 1rem 2rem 1rem 2rem;
   border-bottom-right-radius: 1rem;
-  border-right: solid #4f5f56 3px;
+  border-right: solid #334042 3px;
   z-index: 999999;
   position: absolute;
 }
@@ -10959,11 +10977,11 @@ body {
 
 .light_section {
   background: white;
-  color: #3f4c45;
+  color: #3e4e50;
 }
 
 .dark_section {
-  background: #5b6d63;
+  background: #3E4E50;
   color: white;
 }
 /*# sourceMappingURL=main.css.map */
