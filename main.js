@@ -15,12 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    /* GASP - Animations */
+    // GASP - Animations
     let polygons_to_animate = 3;
     let topSection = document.querySelector(".top_section");
     
     // Intro animations.
-    /* Hide parent of polygons to get height values as percentages insteand of computed px values. */
+    // Hide parent of polygons to get height values as percentages insteand of computed px values.
     topSection.style.display = "none";
     for (let i = 1; i <= polygons_to_animate; i++)
     {
@@ -30,12 +30,11 @@ document.addEventListener("DOMContentLoaded", function () {
         gsap.from("#poly_" + i, {
             duration: 1,
             height: "0%",
-            ease: "back.out(2)",
+            ease: "expo.out(2)",
             // Set height back to percentages when the animation stops playing.
             onComplete: function() {target_element.style.height = height_percentage}
         }).delay(i * 0.68);
     }
-    gsap.from("#A_Frame_Scene", {duration: 1, opacity: "0", ease: "epo.out"}).delay(3);
+    gsap.from("#A_Frame_Scene", {duration: 2, bottom: "-100%", ease: "expo.out"}).delay(3);
     topSection.style.display = "block"; // Show parent of polygons again.
-
 });

@@ -37,7 +37,7 @@
     <!-- 3D Scene (in-line instead of using an iframe because of issues going fullscreen.)
     <iframe id="A_Frame_Scene" allowfullscreen="yes" allowvr="yes" src="Cyberpunk Scene\AFrame_CyberP_Scene\index.html"></iframe> -->
     <div id="A_Frame_Scene">
-      <a-scene embedded background="color: dimgrey" Renderer="foveationLevel: 2; highRefreshRate: true;"
+      <a-scene loading-screen="backgroundColor: none" embedded background="color: dimgrey" Renderer="foveationLevel: 2; highRefreshRate: true;"
         vr-mode-ui="enterVRButton: #myEnterVRButton;">
 
         <!-- Asset Declarations -->
@@ -129,11 +129,7 @@
     </svg>
   </div>
 
-  <!--
-  <div style="height: 100vh;">
-    After
-  </div>
-  -->
+  <div class="page_section"></div>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"
