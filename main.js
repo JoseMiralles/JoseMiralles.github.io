@@ -28,13 +28,13 @@ document.addEventListener("DOMContentLoaded", function () {
         // Store default height (will get percentage since parent is hidden).
         let height_percentage = getComputedStyle(target_element).height;
         gsap.from("#poly_" + i, {
-            duration: 1,
+            duration: 2,
             height: "0%",
-            ease: "expo.out(2)",
+            ease: "back.out(3)",
             // Set height back to percentages when the animation stops playing.
             onComplete: function() {target_element.style.height = height_percentage}
-        }).delay(i * 0.68);
+        }).delay((i/10));
     }
-    gsap.from("#A_Frame_Scene", {duration: 2, bottom: "-100%", ease: "expo.out"}).delay(3);
+    gsap.from("#A_Frame_Scene", {duration: 2.5, bottom: "-100%", ease: "expo.out"}).delay(1);
     topSection.style.display = "block"; // Show parent of polygons again.
 });
