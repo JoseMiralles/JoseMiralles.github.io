@@ -98,6 +98,9 @@ body{
     
     .left_image{
         max-width: 100%;
+        max-height: 30vh;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -213,7 +216,7 @@ body{
     color: darken($color: theme-color("dark"), $amount: 0%);
 
     .text-muted{
-        color: darken($color: theme-color("light"), $amount: 30%) !important;
+        color: darken($color: theme-color("light"), $amount: 40%) !important;
     }
 
     .section_title_wrapper{
