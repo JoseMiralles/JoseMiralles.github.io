@@ -10865,16 +10865,12 @@ body {
   font-family: Bebas_Neue;
   text-align: center;
   padding-left: 1rem;
-  font-size: 5rem;
+  font-size: 6rem;
 }
 
 @media (max-width: 518px) {
   .page_section .section_title_wrapper h1 {
-    padding-left: 0rem;
-    font-size: 4rem;
     text-align: left;
-    line-height: 2.8rem;
-    bottom: -0.8rem;
   }
 }
 
@@ -10888,7 +10884,7 @@ body {
 }
 
 .top_section #Title_text {
-  color: white;
+  color: #f2f2f2;
   position: absolute;
   bottom: 5.57097%;
   font-family: Bebas_Neue;
@@ -10956,10 +10952,11 @@ body {
 
 .top_section #poly_flat {
   height: 5.57097%;
+  border-bottom: solid 3px #e6e6e6;
 }
 
 .top_section #poly_flat polygon {
-  fill: white;
+  fill: #f2f2f2;
 }
 
 .top_section #poly_flat_extrusion {

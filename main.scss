@@ -77,14 +77,14 @@ body{
             font-family: Bebas_Neue;
             text-align: center;
             padding-left: 1rem;
-            font-size: 5rem;
+            font-size: 6rem;
 
             @media (max-width: 518px){
-                padding-left: 0rem;
-                font-size: 4rem;
+                //padding-left: 0rem;
+                //font-size: 4rem;
                 text-align: left;
-                line-height: 2.8rem;
-                bottom: -0.8rem;
+                //line-height: 2.8rem;
+                //bottom: -0.8rem;
             }
         }
     }
@@ -104,7 +104,7 @@ body{
     background: darken($color: theme-color("dark"), $amount: 12%);
 
     #Title_text{
-        color: theme-color("light");
+        color: darken($color: theme-color("light"), $amount: 5%);
         position: absolute;
         bottom: $sixth;
         font-family: Bebas_Neue;
@@ -162,9 +162,10 @@ body{
     #poly_flat{
         height: $sixth;
         //box-shadow: 0px -3px 0px 0.3px $primary_extrusion_color;
+        border-bottom: solid 3px darken($color: theme-color("light"), $amount: 10%);
         polygon{
             //fill: lighten($color: theme-color("dark"), $amount: 18.3%);
-            fill: theme-color("light");
+            fill: darken($color: theme-color("light"), $amount: 5%);
         }
     }
     #poly_flat_extrusion{
