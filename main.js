@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-
+    
     // Check if user is on mobile.
     if (AFRAME.utils.device.isMobile()) {
         // Remove expensive elements from scene if in mobile.
