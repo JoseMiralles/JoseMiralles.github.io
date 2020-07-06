@@ -10844,14 +10844,15 @@ body {
 }
 
 .page_section {
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   position: relative;
   overflow: hidden;
 }
 
 .page_section .section_title_wrapper {
-  margin-bottom: 3.44286%;
-  height: 38.1924%;
+  margin-bottom: 9.01452vh;
+  height: 38.1924vh;
   position: relative;
 }
 
@@ -10877,7 +10878,12 @@ body {
   }
 }
 
+.page_section .left_image {
+  max-width: 100%;
+}
+
 .top_section {
+  height: 100vh;
   background: #232c2e;
 }
 

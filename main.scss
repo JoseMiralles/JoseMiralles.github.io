@@ -22,6 +22,18 @@ $eigth: 100% * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.
 $ninth: 100% * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
 $tenth: 100% * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
 
+
+$firstVH: 100vh * 0.6180;
+$secondVH: 100vh * 0.6180 * 0.6180;
+$thirdVH: 100vh * 0.6180 * 0.6180 * 0.6180;
+$forthVH: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180;
+$fifthVH: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
+$sixthVH: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
+$seventhVH: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
+$eigthVH: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
+$ninthVH: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
+$tenthVH: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
+
 @font-face{
     font-family: Josefin;
     src: url(assets/fonts/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf);
@@ -45,14 +57,15 @@ body{
 }
 
 .page_section{
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     position: relative;
     overflow: hidden;
 
     .section_title_wrapper{
 
-        margin-bottom: $seventh;
-        height: $second;
+        margin-bottom: $fifthVH;
+        height: $secondVH;
         position: relative;
 
         h1{
@@ -78,11 +91,16 @@ body{
 
     .section_subtitle{
     }
+
+    .left_image{
+        max-width: 100%;
+    }
 }
 
 // This section includes the 3D scene, and the Title.
 .top_section{
 
+    height: 100vh;
     background: darken($color: theme-color("dark"), $amount: 12%);
 
     #Title_text{
