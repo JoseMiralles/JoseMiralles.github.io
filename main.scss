@@ -92,6 +92,10 @@ body{
     .section_subtitle{
     }
 
+    .remove-bottom-margin{
+        margin-bottom: 0px;
+    }
+    
     .left_image{
         max-width: 100%;
     }
@@ -208,6 +212,10 @@ body{
     background: theme-color("light");
     color: darken($color: theme-color("dark"), $amount: 0%);
 
+    .text-muted{
+        color: darken($color: theme-color("light"), $amount: 30%) !important;
+    }
+
     .section_title_wrapper{
         background: theme-color("dark");
         color: theme-color("light");
@@ -223,6 +231,10 @@ body{
 .dark_section{
     background: theme-color("dark");
     color: theme-color("light");
+
+    .text-muted{
+        color: lighten($color: theme-color("dark"), $amount: 30%) !important;
+    }
 
     .section_title_wrapper{
         background: theme-color("light");

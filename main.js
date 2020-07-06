@@ -30,11 +30,11 @@ document.addEventListener("DOMContentLoaded", function () {
         gsap.from("#poly_" + i, {
             duration: 2,
             height: "0%",
-            ease: "back.out(3)",
+            ease: "expo.out",
             // Set height back to percentages when the animation stops playing.
             onComplete: function() {target_element.style.height = height_percentage}
         }).delay((i/10));
     }
-    gsap.from(".bottom_gradient", {duration: 10, opacity: 0, ease: "expo.out"}).delay(1);
+    gsap.from(".bottom_gradient", {duration: 3, opacity: 0, ease: "expo.out"}).delay(0);
     topSection.style.display = "block"; // Show parent of polygons again.
 });

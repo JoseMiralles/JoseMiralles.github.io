@@ -10874,6 +10874,10 @@ body {
   }
 }
 
+.page_section .remove-bottom-margin {
+  margin-bottom: 0px;
+}
+
 .page_section .left_image {
   max-width: 100%;
 }
@@ -11002,6 +11006,10 @@ body {
   color: #3e4e50;
 }
 
+.light_section .text-muted {
+  color: #b3b3b3 !important;
+}
+
 .light_section .section_title_wrapper {
   background: #3E4E50;
   color: white;
@@ -11014,6 +11022,10 @@ body {
 .dark_section {
   background: #3E4E50;
   color: white;
+}
+
+.dark_section .text-muted {
+  color: #869ea1 !important;
 }
 
 .dark_section .section_title_wrapper {
