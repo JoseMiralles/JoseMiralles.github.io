@@ -1,17 +1,18 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
+    // Check if user is on mobile.
+    if (AFRAME.utils.device.isMobile()) {
+        // Remove expensive elements from scene if in mobile.
+        document.querySelectorAll('.Remove_from_mobile_VR').forEach(element => {
+            element.parentNode.removeChild(element);
+        });
+    }
+
     /* A-Frame */
     // Listen for when a user enters VR, and remove expensive items if needed.
-    document.querySelector('a-scene').addEventListener('enter-vr', function () {
-        // Check if user is on mobile.
-        if (AFRAME.utils.device.isMobile()) {
-            // Remove expensive elements from scene if in mobile when entering VR.
-            document.querySelectorAll('.Remove_from_mobile_VR').forEach(element => {
-                element.parentNode.removeChild(element);
-            });
-        }
-    });
+    //document.querySelector('a-scene').addEventListener('enter-vr', function () {
+    //});
 
 
 
