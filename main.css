@@ -10988,6 +10988,13 @@ body {
   /* IE6-9 */
 }
 
+.top_section .a-enter-vr-button {
+  bottom: 93vh;
+  right: unset;
+  left: 2vw;
+  width: 100px;
+}
+
 .top_section #Enter_VR_Button_Wrapper {
   background: #3E4E50;
   padding: 1rem 2rem 1rem 2rem;

@@ -195,6 +195,13 @@ body{
     }
 
     //VR Button
+    .a-enter-vr-button{
+        bottom: 93vh;
+        right: unset;
+        left: 2vw;
+        width: 100px;
+    }
+
     #Enter_VR_Button_Wrapper {
       background: theme-color("dark");
       padding: 1rem 2rem 1rem 2rem;
