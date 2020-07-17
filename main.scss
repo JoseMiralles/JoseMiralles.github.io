@@ -54,6 +54,13 @@ $tenthVH: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 *
 body{
     background: theme-color("light");
     position: unset;
+
+    hr{
+        margin: 0;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        border-bottom: 1px solid white;
+    }
 }
 
 .page_section{
@@ -239,6 +246,10 @@ body{
             }
         }
     }
+
+    hr{
+        border-color: darken($color: theme-color("light"), $amount: 10);
+    }
 }
 
 .dark_section{
@@ -258,5 +269,9 @@ body{
                 border-color: theme-color("dark");
             }
         }
+    }
+
+    hr{
+        border-color: lighten($color: theme-color("dark"), $amount: 10);
     }
 }

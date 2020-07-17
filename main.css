@@ -10843,6 +10843,13 @@ body {
   position: unset;
 }
 
+body hr {
+  margin: 0;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  border-bottom: 1px solid white;
+}
+
 .page_section {
   height: auto;
   min-height: 100vh;
@@ -11032,6 +11039,10 @@ body {
   border-color: white;
 }
 
+.light_section hr {
+  border-color: #e6e6e6;
+}
+
 .dark_section {
   background: #3E4E50;
   color: white;
@@ -11048,5 +11059,9 @@ body {
 
 .dark_section .section_title_wrapper h1::before, .dark_section .section_title_wrapper h1::after {
   border-color: #3E4E50;
+}
+
+.dark_section hr {
+  border-color: #546a6d;
 }
 /*# sourceMappingURL=main.css.map */
