@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelectorAll('.Remove_from_mobile_VR').forEach(element => {
             element.parentNode.removeChild(element);
         });
+        document.querySelector('#main_light').setAttribute("light", "color", "white");
     }
 
     /* A-Frame */
