@@ -5,6 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import AFRAME from "aframe";
+import gsap from "gsap";
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './main.scss';

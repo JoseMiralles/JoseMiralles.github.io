@@ -1,6 +1,7 @@
 import React from "react";
 
 import AFrameScene from "./AFrameScene.js";
+import TopSectionTitle from "./TopSectionTitle.js";
 
 class TopSection extends React.Component{
 
@@ -8,6 +9,7 @@ class TopSection extends React.Component{
         return (
             <div className="page_section top_section">
                 <AFrameScene />
+                <TopSectionTitle/>
             </div>
             );
     }
