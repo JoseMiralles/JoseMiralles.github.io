@@ -1,13 +1,13 @@
 import React from "react";
+import AFRAME from "aframe";
 
 class AFrameScene extends React.Component {
+
   render() {
 
     const sceneMain3DAsset = require("./Cyberpunk Scene/AFrame_CyberP_Scene/Cyberpunk_Scene.glb");
     const giantScreenImage = require("./Cyberpunk Scene/if-kipling.png");
     const bigScreenVideo = require("./Cyberpunk Scene/AFrame_CyberP_Scene/LargemonitorVideo.mp4");
-    
-
 
     return (
 
@@ -48,9 +48,9 @@ class AFrameScene extends React.Component {
           <a-image src="#kipling-if-poem-image" position="2.456 1.630 0.130" rotation="0 -90 0" scale="4.050 2.270 1">
           </a-image>
           {/* Rig that controls the initial X/Y position of the camera and the hands. */}
-          <a-entity id="rig" position="1 0 0">
+          <a-entity id="rig" position="0 0 0">
             {/* CAMERA */}
-            <a-entity id="camera" position="0 1.6 0" camera look-controls />
+            <a-entity id="camera" position="0 1.6 0" camera={true} look-controls={false} />
             {/* VR HANDS */}
             <a-entity id="leftHand" hand-controls="hand: left; handModelStyle: lowPoly; color: dimgrey" />
             <a-entity id="rightHand" hand-controls="hand: right; handModelStyle: lowPoly; color: dimgrey" />
@@ -66,6 +66,18 @@ class AFrameScene extends React.Component {
 
     );
   }
+
+  componentDidMount(){
+        // Check if user is on mobile.
+        if (AFRAME.utils.device.isMobile()) {
+          // Remove expensive elements from scene if in mobile.
+          document.querySelectorAll('.Remove_from_mobile_VR').forEach(element => {
+              element.parentNode.removeChild(element);
+          });
+          document.querySelector('#main_light').setAttribute("light", "color", "white");
+      }
+  }
+
 }
 
 export default AFrameScene;
