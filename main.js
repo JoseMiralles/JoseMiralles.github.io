@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let topSection = document.querySelector(".top_section");
     
     // Intro animations.
-    // Hide parent of polygons to get height values as percentages insteand of computed px values.
+    // Hide parent of polygons to the store height values as percentages insteand of computed px values.
     topSection.style.display = "none";
     for (let i = 1; i <= polygons_to_animate; i++)
     {

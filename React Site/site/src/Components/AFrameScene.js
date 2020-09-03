@@ -50,7 +50,7 @@ class AFrameScene extends React.Component {
           {/* Rig that controls the initial X/Y position of the camera and the hands. */}
           <a-entity id="rig" position="0 0 0">
             {/* CAMERA */}
-            <a-entity id="camera" position="0 1.6 0" camera={true} look-controls={false} />
+            <a-entity id="camera" position="0 1.6 0" camera={true} look-controls={true} />
             {/* VR HANDS */}
             <a-entity id="leftHand" hand-controls="hand: left; handModelStyle: lowPoly; color: dimgrey" />
             <a-entity id="rightHand" hand-controls="hand: right; handModelStyle: lowPoly; color: dimgrey" />
