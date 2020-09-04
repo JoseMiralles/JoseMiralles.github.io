@@ -1,6 +1,7 @@
 import React from "react"
 
 import ResumeItem from "./ResumeItem.js";
+import NextSectionArrow from "./NextSectionArrow.js";
 
 class ResumeSection extends React.Component {
 
@@ -16,7 +17,7 @@ class ResumeSection extends React.Component {
         if (this.props.SectionData.items) {
             resumeItems = this.props.SectionData.items.map((item) => {
                 return (
-                    <ResumeItem content={item} />
+                        <ResumeItem content={item} />
                 );
             });
         }
@@ -42,6 +43,7 @@ class ResumeSection extends React.Component {
 
                 </div>
                 <div className="container"><hr /></div>
+                {/*<NextSectionArrow text={this.props.nextTitle}/>*/}
             </div>
 
 
