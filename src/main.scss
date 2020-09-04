@@ -1,0 +1,290 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+$theme-colors: (
+  "primary": #F25757,
+  //"light": #EAF2E3,
+  "light": white,
+  "dark": #3E4E50,
+  "none": transparent
+);
+$primary_extrusion_color: darken($color: theme-color("dark"), $amount: 0%);
+$dark_extrusion_color: darken($color: theme-color("light"), $amount: 12%);
+
+//These variables follow the golden ratio.
+$first: 100% * 0.6180;
+$second: 100% * 0.6180 * 0.6180;
+$third: 100% * 0.6180 * 0.6180 * 0.6180;
+$forth: 100% * 0.6180 * 0.6180 * 0.6180 * 0.6180;
+$fifth: 100% * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
+$sixth: 100% * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
+$seventh: 100% * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
+$eigth: 100% * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
+$ninth: 100% * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
+$tenth: 100% * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
+
+
+$firstVH: 100vh * 0.6180;
+$secondVH: 100vh * 0.6180 * 0.6180;
+$thirdVH: 100vh * 0.6180 * 0.6180 * 0.6180;
+$forthVH: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180;
+$fifthVH: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
+$sixthVH: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
+$seventhVH: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
+$eigthVH: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
+$ninthVH: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
+$tenthVH: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
+
+@font-face{
+    font-family: Josefin;
+    src: url(assets/fonts/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: Caveat_Bold;
+    src: url(assets/fonts/Caveat/Caveat-Bold.ttf);
+}
+@font-face{
+    font-family: Permanent_Marker;
+    src: url(assets/fonts/Permanent_Marker/PermanentMarker-Regular.ttf);
+}
+@font-face{
+    font-family: Bebas_Neue;
+    src: url(assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+body{
+    background: theme-color("light");
+    position: unset;
+
+    hr{
+        margin: 0;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        border-bottom: 1px solid white;
+    }
+}
+
+.page_section{
+    height: auto;
+    //min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    .section_title_wrapper{
+
+        margin-bottom: $fifthVH;
+        height: $thirdVH;
+        position: relative;
+
+        h1{
+            text-align: center;
+            width: 100%;
+            line-height: 2rem;
+            position: absolute;
+            bottom: 0;
+            font-family: Bebas_Neue;
+            text-align: center;
+            padding-left: 1rem;
+            font-size: 6rem;
+            font-style: italic;
+
+            @media (max-width: 518px){
+                //padding-left: 0rem;
+                //font-size: 4rem;
+                text-align: left;
+                //line-height: 2.8rem;
+                //bottom: -0.8rem;
+            }
+        }
+    }
+
+    .itemDescription{
+        margin-top: 1rem;
+    }
+
+    .remove-bottom-margin{
+        margin-bottom: 0px;
+    }
+    
+    .left_image{
+        max-width: 100%;
+        max-height: 30vh;
+    }
+
+    .rounded_image{
+        border-radius: 100rem;
+        border: solid 10px theme-color("dark");
+    }
+
+    .next_section_arrow{
+        position: absolute;
+        z-index: 999999;
+        bottom:0.5vh;
+        right: 5vw;
+        font-style: italic;
+        color: grey;
+    }
+}
+
+// This section includes the 3D scene, and the Title.
+.top_section{
+
+    height: 100vh;
+    background: darken($color: theme-color("dark"), $amount: 12%);
+
+    #Title_text{
+        color: darken($color: theme-color("light"), $amount: 5%);
+        position: absolute;
+        bottom: $sixth;
+        font-family: Bebas_Neue;
+        line-height: 3rem;
+        width: 100%;
+        text-align: left;
+        padding-left: 1rem;
+        font-size: 7rem;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        max-width: 100%;
+        font-style: italic;
+        @media (max-width: 518px) {
+            text-align: left;
+            line-height: 4rem;
+            bottom: 3.57097%;
+            overflow: visible;
+            font-size: 6rem;
+        }
+    }
+    #A_Frame_Scene{
+        position: absolute;
+        border:none;
+        width: 100%;
+        height: 100%;
+        -moz-box-shadow:    inset 0 0 10px #000000;
+        -webkit-box-shadow: inset 0 0 10px #000000;
+        box-shadow:         inset 0 0 10px #000000;
+    }
+    svg{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left:0;
+    }
+    #poly_3{
+        height: $second;
+        width: $third;
+        polygon{
+            fill: theme-color("dark");
+        }
+    }
+    #poly_2{
+        height: $third;
+        width: $second;
+        polygon{
+            fill: lighten($color: theme-color("dark"), $amount: 6.1%);
+        }
+    }
+    #poly_1{
+        height: $forth;
+        width: $first;
+        polygon{
+            fill: lighten($color: theme-color("dark"), $amount: 12.2%);
+        }
+    }
+    #poly_flat{
+        height: $sixth;
+        //box-shadow: 0px -3px 0px 0.3px $primary_extrusion_color;
+        border-bottom: solid 3px darken($color: theme-color("light"), $amount: 10%);
+        polygon{
+            //fill: lighten($color: theme-color("dark"), $amount: 18.3%);
+            fill: darken($color: theme-color("light"), $amount: 5%);
+        }
+    }
+    #poly_flat_extrusion{
+        height: $sixth;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    .bottom_gradient
+    {
+        height: $second;
+        width: 100%;
+        background: black;
+        position: absolute;
+        bottom: 0;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+6,000000+100&0+0,1+100 */
+        background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.06) 6%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.06) 6%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.06) 6%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+    }
+
+    //VR Button
+    .a-enter-vr-button{
+        bottom: 93vh;
+        right: unset;
+        left: 2vw;
+        width: 100px;
+    }
+
+    #Enter_VR_Button_Wrapper {
+      background: theme-color("dark");
+      padding: 1rem 2rem 1rem 2rem;
+      border-bottom-right-radius: 1rem;
+      border-right: solid darken($color: theme-color("dark"), $amount: 5%) 3px;
+      z-index: 999999;
+      position: absolute;
+      a{
+        color: theme-color("light");
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-family: Tahoma, Geneva, sans-serif;
+      }
+    }
+}
+
+.light_section{
+    background: theme-color("light");
+    color: darken($color: theme-color("dark"), $amount: 0%);
+
+    .text-muted{
+        color: darken($color: theme-color("light"), $amount: 40%) !important;
+    }
+
+    .section_title_wrapper{
+        background: theme-color("dark");
+        color: theme-color("light");
+
+        h1{
+            &::before, &::after{
+                border-color: theme-color("light");
+            }
+        }
+    }
+
+    hr{
+        border-color: darken($color: theme-color("light"), $amount: 10);
+    }
+}
+
+.dark_section{
+    background: theme-color("dark");
+    color: theme-color("light");
+
+    .text-muted{
+        color: lighten($color: theme-color("dark"), $amount: 30%) !important;
+    }
+
+    .section_title_wrapper{
+        background: theme-color("light");
+        color: theme-color("dark");
+
+        h1{
+            &::before, &::after{
+                border-color: theme-color("dark");
+            }
+        }
+    }
+
+    hr{
+        border-color: lighten($color: theme-color("dark"), $amount: 10);
+    }
+}
