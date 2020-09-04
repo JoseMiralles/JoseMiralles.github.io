@@ -28,7 +28,7 @@ const ResumeSections = [
 
     // Projects
     {
-        title: "Others",
+        title: "Projects",
         darkTheme: false,
         items: [
             {
@@ -85,7 +85,7 @@ const ResumeSections = [
 
     // Stuff I'm learning
     {
-        title: "Others",
+        title: "Learning",
         darkTheme: true,
         smallItems: true,
         items: [

@@ -42,7 +42,6 @@ class ResumeSection extends React.Component {
                     {resumeItems ? resumeItems : ""}
 
                 </div>
-                <div className="container"><hr /></div>
                 {/*<NextSectionArrow text={this.props.nextTitle}/>*/}
             </div>
 
