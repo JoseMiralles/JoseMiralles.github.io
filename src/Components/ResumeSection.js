@@ -17,13 +17,16 @@ class ResumeSection extends React.Component {
         if (this.props.SectionData.items) {
             resumeItems = this.props.SectionData.items.map((item) => {
                 return (
-                        <ResumeItem content={item} />
+                        <ResumeItem content={item} linkSectionItem={this.props.SectionData.linksSection} />
                 );
             });
         }
 
         // Surround by div row if this section is for smaller items.
-        if (resumeItems && this.props.SectionData.smallItems){
+        if (resumeItems &&
+            (this.props.SectionData.smallItems
+            || this.props.SectionData.linksSection)
+            ){
             resumeItems = (
                 <div className="row my-5">
                     {resumeItems}

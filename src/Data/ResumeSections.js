@@ -77,16 +77,27 @@ const ResumeSections = [
                     "All graphic design was done using Adobe Photoshop and Illustrator."
                 ],
                 links: [
-                    { title: "Visit Site", url: "OLD/TAC/index.html" }
+                    { title: "Visit Site", url: "OLD/Original/TAC/index.html" }
                 ]
             }
+        ]
+    },
+
+    {
+        title: "Links",
+        darkTheme: true,
+        linksSection: true,
+        items:[
+            {title: "GitHub", url: "https://github.com/JoseMiralles"},
+            {title: "StackOverflow", url: "https://stackoverflow.com/users/2895137/jose-miralles"},
+            {title: "CodePen", url: "https://codepen.io/JoseGMiralles/pens/showcase"}
         ]
     },
 
     // Stuff I'm learning
     {
         title: "Learning",
-        darkTheme: true,
+        darkTheme: false,
         smallItems: true,
         items: [
             {

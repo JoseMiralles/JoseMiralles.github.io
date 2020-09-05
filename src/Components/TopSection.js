@@ -11,7 +11,6 @@ class TopSection extends React.Component{
             <div className="page_section top_section">
                 <AFrameScene />
                 <TopSectionTitle/>
-                <NextSectionArrow text="Work Experience"/>
             </div>
             );
     }

@@ -108,6 +108,8 @@ body{
     .left_image{
         max-width: 100%;
         max-height: 30vh;
+        background-color: theme-color("dark");
+        border-radius: 10rem;
     }
 
     .rounded_image{
@@ -122,6 +124,20 @@ body{
         right: 5vw;
         font-style: italic;
         color: grey;
+    }
+
+    .linkItem{
+        text-align: center;
+        a {
+            color: white !important;
+            font-style: italic;
+            h3{
+                border: solid white 2px;
+                border-radius: 10rem;
+                padding-bottom: 1rem;
+                padding-top: 0.8rem;
+            }
+        }
     }
 }
 

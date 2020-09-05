@@ -25,7 +25,7 @@ class TopSectionTitle extends React.Component {
                     <svg id="poly_flat_extrusion" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                         <polygon points="0,0 0,100 100,100 100,0" />
                     </svg>
-                    <h1 id="Title_text">José Miralles</h1>
+                    <h1 id="Title_text">José Miralles &#11022;</h1>
                     <svg id="poly_flat" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                         <polygon points="0,0 0,100 100,100 100,0" />
                     </svg>
