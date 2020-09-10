@@ -7,8 +7,8 @@ $theme-colors: (
   "dark": #3E4E50,
   "none": transparent
 );
-$primary_extrusion_color: darken($color: theme-color("dark"), $amount: 0%);
-$dark_extrusion_color: darken($color: theme-color("light"), $amount: 12%);
+$primary_extrusion_color: lighten($color: theme-color("dark"), $amount: 0%);
+$dark_extrusion_color: darken($color: theme-color("light"), $amount: 30%);
 
 //These variables follow the golden ratio.
 $first: 100% * 0.6180;
@@ -129,11 +129,11 @@ body{
     .linkItem{
         text-align: center;
         a {
-            color: white !important;
+            color: theme-color('light');
             font-style: italic;
-            h3{
-                border: solid white 2px;
-                border-radius: 10rem;
+            h5{
+                border: solid white 1px;
+                border-radius: 1rem;
                 padding-bottom: 1rem;
                 padding-top: 0.8rem;
             }
@@ -302,5 +302,13 @@ body{
 
     hr{
         border-color: lighten($color: theme-color("dark"), $amount: 10);
+    }
+}
+
+.built_with_react_component{
+    font-style: italic;
+    a{
+        color: theme-color('dark');
+        font-weight: bold;
     }
 }

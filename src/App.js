@@ -4,6 +4,7 @@ import TopSection from "./Components/TopSection.js";
 import ResumeSection from "./Components/ResumeSection.js"
 
 import ResumeSections from "./Data/ResumeSections.js"
+import BuiltWithReact from "./Components/BuiltWithReact.js";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
   return (
     <div className="App">
       <TopSection />
+      <BuiltWithReact />
       {mappedResumeSections}
     </div>
   );

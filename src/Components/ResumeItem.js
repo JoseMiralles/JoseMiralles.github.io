@@ -14,7 +14,7 @@ class ResumeItem extends React.Component {
       return (
         <div className="col-lg-4 linkItem">
           <a href={item.url}>
-            <h3>- {item.title} -></h3>
+            <h5>- {item.title} -></h5>
           </a>
         </div>
       );

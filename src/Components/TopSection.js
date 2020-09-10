@@ -4,15 +4,15 @@ import AFrameScene from "./AFrameScene.js";
 import TopSectionTitle from "./TopSectionTitle.js";
 import NextSectionArrow from "./NextSectionArrow.js";
 
-class TopSection extends React.Component{
+class TopSection extends React.Component {
 
-    render (){
+    render() {
         return (
             <div className="page_section top_section">
                 <AFrameScene />
-                <TopSectionTitle/>
+                <TopSectionTitle />
             </div>
-            );
+        );
     }
 }
 
