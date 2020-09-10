@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.3ebd37e6.chunk.css",
-    "main.js": "/static/js/main.d2f78e3d.chunk.js",
-    "main.js.map": "/static/js/main.d2f78e3d.chunk.js.map",
+    "main.css": "/static/css/main.11d0226c.chunk.css",
+    "main.js": "/static/js/main.fa245fbd.chunk.js",
+    "main.js.map": "/static/js/main.fa245fbd.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.23041e79.js",
     "runtime-main.js.map": "/static/js/runtime-main.23041e79.js.map",
-    "static/css/2.8aa5a7f8.chunk.css": "/static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.8778f188.chunk.js": "/static/js/2.8778f188.chunk.js",
-    "static/js/2.8778f188.chunk.js.map": "/static/js/2.8778f188.chunk.js.map",
+    "static/css/2.2ee1fce8.chunk.css": "/static/css/2.2ee1fce8.chunk.css",
+    "static/js/2.b2377266.chunk.js": "/static/js/2.b2377266.chunk.js",
+    "static/js/2.b2377266.chunk.js.map": "/static/js/2.b2377266.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e84a6dbde45520afefc2f3fc9acd4d91.js": "/precache-manifest.e84a6dbde45520afefc2f3fc9acd4d91.js",
+    "precache-manifest.7a15c520002426c60c7386d86e2b891b.js": "/precache-manifest.7a15c520002426c60c7386d86e2b891b.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.8aa5a7f8.chunk.css.map": "/static/css/2.8aa5a7f8.chunk.css.map",
-    "static/css/main.3ebd37e6.chunk.css.map": "/static/css/main.3ebd37e6.chunk.css.map",
-    "static/js/2.8778f188.chunk.js.LICENSE.txt": "/static/js/2.8778f188.chunk.js.LICENSE.txt",
+    "static/css/2.2ee1fce8.chunk.css.map": "/static/css/2.2ee1fce8.chunk.css.map",
+    "static/css/main.11d0226c.chunk.css.map": "/static/css/main.11d0226c.chunk.css.map",
+    "static/js/2.b2377266.chunk.js.LICENSE.txt": "/static/js/2.b2377266.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/static/media/PermanentMarker-Regular.c863f802.ttf",
     "static/media/Cyberpunk_Scene.glb": "/static/media/Cyberpunk_Scene.f9eea5c8.glb",
     "static/media/Eurolamy_logo.png": "/static/media/Eurolamy_logo.f71515ee.png",
@@ -24,13 +24,14 @@
     "static/media/cpplogo.png": "/static/media/cpplogo.466b21ae.png",
     "static/media/gifaroo_icon.png": "/static/media/gifaroo_icon.f732ce44.png",
     "static/media/if-kipling.png": "/static/media/if-kipling.6a8b58b5.png",
+    "static/media/instavel_logo.png": "/static/media/instavel_logo.ef469f67.png",
     "static/media/unreal_logo.png": "/static/media/unreal_logo.9dc2bcd1.png"
   },
   "entrypoints": [
     "static/js/runtime-main.23041e79.js",
-    "static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.8778f188.chunk.js",
-    "static/css/main.3ebd37e6.chunk.css",
-    "static/js/main.d2f78e3d.chunk.js"
+    "static/css/2.2ee1fce8.chunk.css",
+    "static/js/2.b2377266.chunk.js",
+    "static/css/main.11d0226c.chunk.css",
+    "static/js/main.fa245fbd.chunk.js"
   ]
 }
