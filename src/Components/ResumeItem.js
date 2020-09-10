@@ -43,7 +43,7 @@ class ResumeItem extends React.Component {
     // Round image if it should be rounded.
     const imgClassNames = item.roundImg
       ? "left_image img-fluid rounded_image mx-auto my-3"
-      : "left_image img-fluid mx-auto my-3";
+      : "left_image img-fluid mx-auto my-3 p-3";
 
     // Surround the img tag if there is a link/url for this item.
     let imgTag = null;

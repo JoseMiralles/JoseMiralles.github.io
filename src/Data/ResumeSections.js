@@ -36,14 +36,14 @@ const ResumeSections = [
                 jobTitle: "Built Complete Web App",
                 imgSrc: require("../assets/instavel_logo.png"),
                 roundImg: true,
-                description: "This is an Instagram clone built with Laravel and PHP.",
+                description: "This is an Instagram clone built with Laravel and PHP. I built it to gain familiarity with back end development.",
                 highlights: [
                     "Followed the MVC design pattern.",
-                    "Followed RESTful routing for CRUD operations.",
-                    "Created API, which is then called by a vue.js component from the client.",
+                    "Followed RESTful routing to perform CRUD operations on an SQL database.",
                     "Database migrations were created from models.",
+                    "Created API, which is then called by a vue.js component from the client.",
                     "Used Bootstrap and flexbox for styling",
-                    "Supports authentication."
+                    "Implemented policies to limit operations from unauthenticated users."
                 ],
                 links: [
                     { title: "View source", url: "https://github.com/JoseMiralles/Instavel" }
