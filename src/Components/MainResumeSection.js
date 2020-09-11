@@ -19,9 +19,9 @@ class MainResumeSection extends React.Component {
                     <div className="row">
                     <br/> <br/> <br/>
                         {/* Section Title */}
-                        <div className=" col-md-7 offset-md-5 p-5 dark_bg text-center">
+                        <div className="section-title col-md-7 offset-md-5 p-5 dark_bg text-center">
                             <div className="">
-                                <h1 className="">{item.title}</h1>
+                                <div className="">{item.title}</div>
                             </div>
                         </div>
                     </div>
@@ -65,7 +65,7 @@ class ResumeItem extends React.Component {
                 {/*Image and title*/}
                 <div className="col-md-5 py-5 align-self-center">
                     <div className="col-md-8 offset-md-2 p-3 align-self-center text-center">
-                        <img className={"w-75 mb-4 " + (data.roundImg ? "rounded-img" : "")}
+                        <img className={"w-75 mb-4 resume-item-image" + (data.roundImg ? " rounded-img" : "")}
                             src={data.imgSrc} />
                         <div><strong>{data.employer}</strong></div>
                         <div className="text-muted">{data.jobTitle}</div>

@@ -3,8 +3,9 @@
 $theme-colors: (
   "primary": #F25757,
   //"light": #EAF2E3,
-  "light": white,
-  "dark": #3E4E50,
+  "light": ghostwhite,
+  //"dark": #3E4E50,
+  "dark" : steelblue,
   "none": transparent
 );
 $primary_extrusion_color: lighten($color: theme-color("dark"), $amount: 0%);
@@ -64,9 +65,12 @@ body{
     background: theme-color("light");
 }
 
+.resume-item-image {
+    max-width: 50vw;
+}
 .rounded-img {
     border-radius: 100rem;
-    border: 0.7rem solid darken(theme-color("light"), 10%);
+    border: 0.7rem solid darken(theme-color("light"), 5%);
 }
 
 .built-with-react-wrapper{
@@ -75,12 +79,20 @@ body{
     .built_with_react_component{
     font-style: italic;
 
-    a{
-        color: theme-color('dark');
-        font-weight: bold;
+        a{
+            color: theme-color('dark');
+            font-weight: bold;
+        }
     }
-}}
+}
 
 .darkFont{
     color: theme-color("dark");
+}
+
+.section-title{
+    font-family: Bebas_Neue;
+    font-style: italic;
+    font-size: 6rem;
+    border-bottom: solid 3px lighten(theme-color("dark"), 10%);
 }

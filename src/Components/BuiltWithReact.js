@@ -4,7 +4,7 @@ class BuiltWithReact extends React.Component {
     render() {
         return (
 
-            <div className="row py-5 built-with-react-wrapper">
+            <div className="col-12 py-5 built-with-react-wrapper">
                 <div className="col-lg-6 offset-lg-3 p-3 built_with_react_component border rounded">
 
                     <div className="row justify-content-center">
@@ -12,7 +12,7 @@ class BuiltWithReact extends React.Component {
                     </div>
 
                     <div className="row justify-content-center">
-                        <a href="https://github.com/JoseMiralles/JoseMiralles.github.io">
+                        <a className="btn" href="https://github.com/JoseMiralles/JoseMiralles.github.io">
                             View source &gt;&gt;&gt;
                         </a>
                     </div>
