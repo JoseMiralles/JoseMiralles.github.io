@@ -23,6 +23,7 @@ class MainResumeSection extends React.Component {
                             <div className="">
                                 <div className="">{item.title}</div>
                             </div>
+                            <hr/>
                         </div>
                     </div>
 
@@ -56,7 +57,14 @@ class ResumeItem extends React.Component {
             return (
                 <li>{hl}</li>
             );
-        })
+        });
+
+        let links = "";
+        if (data.links){
+            links = data.links.map((link) => {
+                return <a href={link.url}>- {link.title} &gt;</a>;
+              });
+        }
 
         return (
 
@@ -66,9 +74,12 @@ class ResumeItem extends React.Component {
                 <div className="col-md-5 py-5 align-self-center">
                     <div className="col-md-8 offset-md-2 p-3 align-self-center text-center">
                         <img className={"w-75 mb-4 resume-item-image" + (data.roundImg ? " rounded-img" : "")}
-                            src={data.imgSrc} />
+                            src={data.imgSrc} 
+                            alt="Resume item"/>
                         <div><strong>{data.employer}</strong></div>
                         <div className="text-muted">{data.jobTitle}</div>
+                        <div className="text-muted">{data.dateRange}</div>
+                        {links}
                     </div>
                 </div>
 
@@ -76,12 +87,10 @@ class ResumeItem extends React.Component {
                 <div className="col-md-7 d-flex py-3 dark_bg">
                     <div className="col-md-10 p-4 align-self-center offset-md-1">
 
-                        {data.description ? <p>{data.description}</p> : ""}
+                        {data.description ? <span><p>{data.description}</p><hr/></span> : ""}
 
-                        <hr />
                         {/* Bullet points */}
                         <ul>{highlights}</ul>
-                        <hr />
 
                     </div>
                 </div>

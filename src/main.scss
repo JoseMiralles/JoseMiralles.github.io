@@ -3,9 +3,9 @@
 $theme-colors: (
   "primary": #F25757,
   //"light": #EAF2E3,
-  "light": ghostwhite,
+  "light": white,
   //"dark": #3E4E50,
-  "dark" : steelblue,
+  "dark" : darkslategrey,
   "none": transparent
 );
 $primary_extrusion_color: lighten($color: theme-color("dark"), $amount: 0%);
@@ -74,7 +74,7 @@ body{
 }
 
 .built-with-react-wrapper{
-    background: darken(theme-color("light"), 5%);
+    background: darken(theme-color("light"), 3%);
 
     .built_with_react_component{
     font-style: italic;
@@ -93,6 +93,5 @@ body{
 .section-title{
     font-family: Bebas_Neue;
     font-style: italic;
-    font-size: 6rem;
-    border-bottom: solid 3px lighten(theme-color("dark"), 10%);
+    font-size: 5rem;
 }
