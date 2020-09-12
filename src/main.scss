@@ -36,24 +36,22 @@ $ninthVH: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 *
 $tenthVH: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
 
 @font-face{
-    font-family: Josefin;
-    src: url(assets/fonts/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf);
-}
-@font-face{
-    font-family: Caveat_Bold;
-    src: url(assets/fonts/Caveat/Caveat-Bold.ttf);
-}
-@font-face{
-    font-family: Permanent_Marker;
-    src: url(assets/fonts/Permanent_Marker/PermanentMarker-Regular.ttf);
-}
-@font-face{
     font-family: Bebas_Neue;
     src: url(assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
 }
 
 body{
-    background: darken(theme-color("light"), 10%);
+    background: darken(theme-color("light"), 20%);
+}
+
+.hero-section{
+
+    min-height: 100vh;
+
+    .hero-title{
+        font-family: Bebas_Neue;
+        line-height: 4rem;
+    }
 }
 
 .dark_bg{
@@ -63,6 +61,10 @@ body{
 
 .light_bg{
     background: darken(theme-color("light"), 0%);
+}
+
+.darkFont{
+    color: theme-color("dark");
 }
 
 .resume-item-image {
@@ -86,13 +88,8 @@ body{
     }
 }
 
-.darkFont{
-    color: theme-color("dark");
-}
-
 .section-title{
     font-family: Bebas_Neue;
-    font-style: italic;
     font-size: 4rem;
-    background: darken(theme-color("light"), 5%);
+    border-bottom: solid #dee2e6 1px;
 }

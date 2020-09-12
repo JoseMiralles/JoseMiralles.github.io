@@ -4,13 +4,7 @@ import { mainSections } from "../Data/ResumeSections.js";
 
 class MainResumeSection extends React.Component {
     render() {
-        {
-            /* This maps each work section. Work, projects, etc... */
-        }
         const mappedMainSections = mainSections.map((item, index) => {
-            {
-                /* This maps all work and projects items. */
-            }
             const mappedWorkItems = item.items.map((wItem, index2) => {
                 return <ResumeItem data={wItem} key={index2} index={index2} />;
             });
