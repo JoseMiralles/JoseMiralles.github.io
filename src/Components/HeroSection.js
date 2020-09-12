@@ -8,12 +8,16 @@ class HeroSection extends React.Component {
                 <svg class="top-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
                     <polygon points="0,0 0,70 100,100 100,20 75,0">
                         <animate dur="1s" attributeName="points"
-                        from="0,0 0,60 100,100 100,20 65,0"
-                        to="0,0 0,70 100,100 100,20 75,0"/>
+                            from="0,0 0,60 100,100 100,20 65,0"
+                            to="0,0 0,70 100,100 100,20 75,0" />
                     </polygon>
                 </svg>
 
-                <div className="top-section-arrow">-⮛⮛⮛-</div>
+                <div className="top-section-arrow">
+                    <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <polyline class="st0" points="0,0 49.5,100 100,0 "/>
+                    </svg>
+                </div>
 
                 <div class="row flex-row-reverse flex-fill">
 

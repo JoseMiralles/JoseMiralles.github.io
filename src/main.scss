@@ -70,10 +70,19 @@ body{
 
     .top-section-arrow{
         position: absolute;
-        bottom: 10vh;
-        left: 0;        text-align: center;
+        bottom: 20vh;
+        left: 0;        
+        text-align: center;
         width: 100%;
         font-size: 2rem;
+
+        svg{
+            stroke: theme-color("light");
+            stroke-width: 10%;
+            width: 2rem;
+            height: 0.6rem;
+            fill: none;
+        }
     }
 }
 
