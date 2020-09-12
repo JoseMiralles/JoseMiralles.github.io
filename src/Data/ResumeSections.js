@@ -5,6 +5,7 @@
         // Work experience
         {
             title: "Work",
+            icon: "&#128296",
             darkTheme: true,
             items: [
                 {
@@ -30,6 +31,7 @@
         // Projects
         {
             title: "Projects",
+            icon: `&#128296;`,
             darkTheme: false,
             items: [
                 {

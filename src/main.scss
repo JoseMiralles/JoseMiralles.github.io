@@ -53,7 +53,7 @@ $tenthVH: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 *
 }
 
 body{
-    background: theme-color("light");
+    background: darken(theme-color("light"), 5%);
 }
 
 .dark_bg{
@@ -62,7 +62,7 @@ body{
 }
 
 .light_bg{
-    background: theme-color("light");
+    background: darken(theme-color("light"), 0%);
 }
 
 .resume-item-image {
@@ -93,5 +93,8 @@ body{
 .section-title{
     font-family: Bebas_Neue;
     font-style: italic;
+    font-size: 5rem;
+}
+.title-icon{
     font-size: 5rem;
 }
