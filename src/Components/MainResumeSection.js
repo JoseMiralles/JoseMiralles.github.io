@@ -16,14 +16,11 @@ class MainResumeSection extends React.Component {
       });
 
       return (
-        <div className="row m-sm-5 border light_bg" key={index}>
+        <div className="row m-sm-5 light_bg" key={index}>
           <br /> <br /> <br />
           {/* Section Title */}
-          <div className="section-title col-md-7 offset-md-5 p-5 dark_bg text-center">
-            <div className="">
-              <div className="">{item.title}</div>
-            </div>
-            <hr />
+          <div className="section-title col-md-12 p-3 darkFont text-center">
+              <div>{item.title}</div>
           </div>
           <div className="col-12">{mappedWorkItems}</div>
         </div>
@@ -54,12 +51,11 @@ class ResumeItem extends React.Component {
       });
     }
 
-    //const reverseFlex = (this.props.index % 2 === 0) ? "" : " flex-row-reverse";
-    const reverseFlex = "";
+    const reverseFlex = (this.props.index % 2 === 0) ? "" : " flex-row-reverse";
     console.log(this.props.index);
 
     return (
-      <div className={"row" + reverseFlex} key={this.props.index}>
+      <div className={"row border m-sm-5" + reverseFlex} key={this.props.index}>
         {/*Image and title*/}
         <div className="col-md-5 py-5 align-self-center">
           <div className="col-md-8 offset-md-2 p-3 align-self-center text-center">
