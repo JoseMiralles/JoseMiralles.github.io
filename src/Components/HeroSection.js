@@ -46,18 +46,15 @@ class HeroSection extends React.Component {
         let topSection = document.querySelector(".top-svg-group");
 
         // Intro animations.
-        // Hide parent of polygons to get height values as percentages insteand of computed px values.
-        topSection.style.display = "none";
         for (let i = 1; i <= polygons_to_animate; i++) {
             let target_element = document.querySelector("#poly_" + i);
             // Store default height (will get percentage since parent is hidden).
-            let height_percentage = getComputedStyle(target_element).height;
             gsap.from("#poly_" + i, {
                 duration: 10,
                 height: "0%",
                 ease: "expo.out",
                 // Set height back to percentages when the animation stops playing.
-                onComplete: function () { target_element.style.height = height_percentage }
+                onComplete: function () { target_element.style.height = null }
             }).delay((i / 10));
         }
         gsap.from("#hero-title", { duration: 3, opacity: 0, ease: "expo.out" }).delay(3);

@@ -9,9 +9,9 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className="App m-xl-4 light_bg">
       <HeroSection />
-        <MainResumeSection />
+      <MainResumeSection />
       <BuiltWithReact />
     </div>
   );

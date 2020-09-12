@@ -4,7 +4,7 @@
 
 $theme-colors: (
   "light": white,
-  "light-bg":  white,
+  "light-bg":  grey,
   "dark" : darkslategrey,
   "none": transparent
 );
@@ -41,7 +41,7 @@ $tenthVH: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 *
 }
 
 body{
-    background: theme-color("light-bg");
+    background: darken(theme-color("light"), 25%);
 }
 
 .hero-section{
@@ -63,7 +63,6 @@ body{
             left: 0;
             top:0;
             fill: theme-color("dark");
-            z-index: -1;
             height: 105vh;
             width: 100%;
         }
