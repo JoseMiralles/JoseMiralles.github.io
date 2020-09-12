@@ -58,25 +58,22 @@ body{
     }
 
     .top-svg-group{
-        $lowerOverflow: -1;
         .top-svg{
-            bottom: $lowerOverflow * -1vh;
             position: absolute;
             left: 0;
+            top:0;
             fill: theme-color("dark");
             z-index: -1;
-            height: 100vh + $lowerOverflow;
+            height: 105vh;
             width: 100%;
         }
         ._2{
             fill: darken(theme-color("dark"), 2%);
-            bottom: $lowerOverflow * -1vh;
-            height: $first + $lowerOverflow;
+            height: $first;
         }
         ._3{
             fill: darken(theme-color("dark"), 4%);
-            bottom: $lowerOverflow * -1vh;
-            height: $second + $lowerOverflow;
+            height: $second;
         }
     }
 

@@ -8,15 +8,15 @@ class HeroSection extends React.Component {
 
                 <span class="top-svg-group">
                     <svg class="top-svg" id="poly_1" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                    <polygon points="0,0 0,80 100,100 100,38.1924" >
+                    <polygon points="0,0 0,68 100,100 100,0" >
                         </polygon>
                     </svg>
                     <svg class="top-svg _2" id="poly_2" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                    <polygon points="0,0 0,80 100,100 100,38.1924" >
+                    <polygon points="0,0 0,68 100,100 100,0" >
                         </polygon>
                     </svg>
                     <svg class="top-svg _3" id="poly_3"  viewBox="0 0 100 100" preserveAspectRatio="none">
-                    <polygon points="0,0 0,80 100,100 100,38.1924" >
+                    <polygon points="0,0 0,68 100,100 100,0" >
                         </polygon>
                     </svg>
                 </span>
