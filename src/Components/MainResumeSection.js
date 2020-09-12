@@ -10,7 +10,7 @@ class MainResumeSection extends React.Component {
             });
 
             return (
-                <div className="row m-sm-5 light_bg border" key={index}>
+                <div className="row m-sm-5" key={index}>
                     <br /> <br /> <br />
                     {/* Section Title */}
                     <div className="section-title col-md-12 p-2 mt-4 darkFont text-center">
