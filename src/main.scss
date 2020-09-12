@@ -57,15 +57,29 @@ body{
         font-size: 2rem;
     }
 
-    .top-svg{
-        $lowerOverflow: 30;
-        position: absolute;
-        left: 0;
-        bottom: $lowerOverflow * -1vh;
-        fill: theme-color("dark");
-        z-index: -1;
-        height: 100vh + $lowerOverflow;
-        width: 100%;
+    .top-svg-group{
+        .top-svg{
+            $lowerOverflow: 50;
+            bottom: $lowerOverflow * -1vh;
+            position: absolute;
+            left: 0;
+            fill: theme-color("dark");
+            z-index: -1;
+            height: 100vh + $lowerOverflow;
+            width: 100%;
+        }
+        ._2{
+            fill: darken(theme-color("dark"), 2%);
+            $lowerOverflow: 25;
+            bottom: $lowerOverflow * -1vh;
+            height: 100vh + $lowerOverflow;
+        }
+        ._3{
+            fill: darken(theme-color("dark"), 4%);
+            $lowerOverflow: 0;
+            bottom: $lowerOverflow * -1vh;
+            height: 100vh + $lowerOverflow;
+        }
     }
 
     .top-section-arrow{
