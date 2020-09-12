@@ -10,10 +10,10 @@ class MainResumeSection extends React.Component {
             });
 
             return (
-                <div className="row m-sm-5 light_bg" key={index}>
+                <div className="row m-sm-5 light_bg border" key={index}>
                     <br /> <br /> <br />
                     {/* Section Title */}
-                    <div className="section-title col-md-12 p-3 darkFont text-center">
+                    <div className="section-title col-md-12 p-2 mt-4 darkFont text-center">
                         <div>{item.title}</div>
                     </div>
                     <div className="col-12">{mappedWorkItems}</div>
@@ -78,10 +78,10 @@ class ResumeItem extends React.Component {
                         <div className="col-md-10 p-4 align-self-center offset-md-1">
                             {data.description ? (
                                 <span>
-                                    <p>{data.description}</p>
+                                    <p className="lead">{data.description}</p>
                                     <hr />
-                                </span>
-                            ) : ("")}
+                                </span>) 
+                                : ("")}
 
                             {/* Bullet points */}
                             <ul>{highlights}</ul>

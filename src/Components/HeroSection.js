@@ -1,19 +1,29 @@
 import React from "react";
 
-class HeroSection extends React.Component{
-    render(){
-        return(
-            <div className="container-fluid dark_bg hero-section">
-                <div class="row d-flex align-items-center">
+class HeroSection extends React.Component {
+    render() {
+        return (
+            <div className="container-fluid light-font hero-section d-flex flex-column">
 
-                    <div className="col-md-4 offset-md-2">
-                        <div className="display-1 hero-title">José Miralles</div>
-                    </div>
-                    <div className="col-md-4">
-                        <div className="display-1 hero-title text-center">777</div>
+                <svg class="top-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <polygon points="0,0 0,70 100,100 100,20 75,0">
+                        <animate dur="1s" attributeName="points"
+                        from="0,0 0,60 100,100 100,20 65,0"
+                        to="0,0 0,70 100,100 100,20 75,0"/>
+                    </polygon>
+                </svg>
+
+                <div className="top-section-arrow">-⮛⮛⮛-</div>
+
+                <div class="row flex-row-reverse flex-fill">
+
+                    <div className="col my-auto align-middle">
+                        <div className="display-1 text-center hero-title">José Miralles</div>
+                        <p className="lead text-center hero-sub-title">- DEVELOPER -</p>
                     </div>
 
                 </div>
+
             </div>
         );
     }
