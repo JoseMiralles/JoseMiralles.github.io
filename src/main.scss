@@ -6,34 +6,19 @@ $theme-colors: (
   "light": white,
   "light-bg":  grey,
   "dark" : darkslategrey,
+  "black" : darken(darkslategrey, 8%),
   "none": transparent
 );
+
 $primary_extrusion_color: lighten($color: theme-color("dark"), $amount: 0%);
 $dark_extrusion_color: darken($color: theme-color("light"), $amount: 30%);
 
-//These variables follow the golden ratio.
+// Golden Ratio Variables
 $first: 100% * 0.6180;
 $second: 100% * 0.6180 * 0.6180;
 $third: 100% * 0.6180 * 0.6180 * 0.6180;
-$forth: 100% * 0.6180 * 0.6180 * 0.6180 * 0.6180;
-$fifth: 100% * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
-$sixth: 100% * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
-$seventh: 100% * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
-$eigth: 100% * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
-$ninth: 100% * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
-$tenth: 100% * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
-
 
 $firstVH: 100vh * 0.6180;
-$secondVH: 100vh * 0.6180 * 0.6180;
-$thirdVH: 100vh * 0.6180 * 0.6180 * 0.6180;
-$forthVH: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180;
-$fifthVH: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
-$sixthVH: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
-$seventhVH: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
-$eigthVH: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
-$ninthVH: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
-$tenthVH: 100vh * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180 * 0.6180;
 
 @font-face{
     font-family: Bebas_Neue;
@@ -92,6 +77,32 @@ body{
             fill: none;
         }
     }
+}
+
+.links-section{
+    // Gradients
+    $mainGradientColor: theme-color("light");
+    $darkGradient: $mainGradientColor, darken($mainGradientColor, 10%);
+    $direction: to right;
+    background: -moz-linear-gradient($direction, $darkGradient);
+    background: -o-linear-gradient($direction, $darkGradient);
+    background: linear-gradient($direction, $darkGradient);
+    background: -webkit-linear-gradient($direction, $darkGradient);
+
+    color: theme-color("light");
+
+    .link-tem{
+        $key-color : theme-color("dark");
+        background: lighten($key-color, 5%);
+        color: theme-color("light");
+        border-bottom: solid 0.5rem $key-color;
+        font-weight: bold;
+    }
+
+    #PCModelWrapper{
+        min-height: 50vh;
+    }
+
 }
 
 .dark_bg{

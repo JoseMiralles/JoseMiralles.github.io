@@ -1,10 +1,14 @@
 import React from "react";
 
-import { mainSections } from "../Data/ResumeSections.js";
-
 class MainResumeSection extends React.Component {
-    render() {
-        const mappedMainSections = mainSections.map((item, index) => {
+
+    constructor(props){
+        super(props);
+        this.props = props;
+    }
+
+    render(props) {
+        const mappedMainSections = this.props.section.map((item, index) => {
             const mappedWorkItems = item.items.map((wItem, index2) => {
                 return <ResumeItem data={wItem} key={index2} index={index2} />;
             });
@@ -34,19 +38,18 @@ class ResumeItem extends React.Component {
     render() {
         const data = this.props.data;
 
-        const highlights = data.highlights.map((hl) => {
-            return <li>{hl}</li>;
+        const highlights = data.highlights.map((hl, index) => {
+            return <li key={index}>{hl}</li>;
         });
 
         let links = "";
         if (data.links) {
-            links = data.links.map((link) => {
-                return <a href={link.url}>- {link.title} &gt;</a>;
+            links = data.links.map((link, index) => {
+                return <a key={index} href={link.url}>- {link.title} &gt;</a>;
             });
         }
 
         const reverseFlex = (this.props.index % 2 === 0) ? "" : " flex-row-reverse";
-        console.log(this.props.index);
 
         return (
             <div className={"row border m-sm-5" + reverseFlex} key={this.props.index}>
