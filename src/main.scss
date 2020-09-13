@@ -81,14 +81,15 @@ body{
 
 .links-section{
     // Gradients
-    $mainGradientColor: theme-color("light");
-    $darkGradient: $mainGradientColor, darken($mainGradientColor, 10%);
+    $mainGradientColor: lighten(theme-color("black"), 5%);
+    $darkGradient: $mainGradientColor, darken($mainGradientColor, 20%);
     $direction: to right;
     background: -moz-linear-gradient($direction, $darkGradient);
     background: -o-linear-gradient($direction, $darkGradient);
     background: linear-gradient($direction, $darkGradient);
     background: -webkit-linear-gradient($direction, $darkGradient);
 
+    overflow: hidden;
     color: theme-color("light");
 
     .link-tem{
@@ -100,7 +101,9 @@ body{
     }
 
     #PCModelWrapper{
-        min-height: 50vh;
+        position: absolute;
+        right: 0;
+        top: 0;
         pointer-events: none;
     }
 
