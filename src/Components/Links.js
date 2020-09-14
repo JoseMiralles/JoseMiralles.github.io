@@ -39,7 +39,7 @@ class Links extends React.Component {
       1,
       1000
     );
-    camera.position.z = 3.5;
+    camera.position.z = 0;
     camera.position.x = 110;
     camera.position.y = 0; // TODO: Animate this trough scroll.
     console.log(camera.aspect);
@@ -49,20 +49,20 @@ class Links extends React.Component {
 
     controls = new OrbitControls(camera, renderer.domElement);
     controls.autoRotate = true;
-    controls.noPan = true;
+    controls.autoRotateSpeed = 0.5;
 
     parent.appendChild(renderer.domElement);
 
     const loader = new GLTFLoader();
     loader.load(require("../assets/z89pc.glb"), function (gltf) {
-      const mesh = gltf.scene.children[2];
+      const mesh = gltf.scene.children[0];
       console.log(gltf);
       const wireframe = new THREE.WireframeGeometry(mesh.geometry);
       const line = new THREE.LineSegments(wireframe);
-      line.position.y = -1;
+      line.position.y = -0.2;
       line.position.x = 0;
       line.material.depthTest = false;
-      line.material.opacity = 1;
+      line.material.opacity = 0.5;
       line.material.transparent = true;
       line.material.color = new THREE.Color("darkslategrey");
 
