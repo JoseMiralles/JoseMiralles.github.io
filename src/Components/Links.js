@@ -42,10 +42,10 @@ class Links extends React.Component {
   }
 
   setup3DComputer(camera, parent) {
+
     let scene, renderer, controls;
 
     scene = new THREE.Scene();
-
     camera.position.z = 0;
     camera.position.x = 110;
     camera.position.y = 0; // TODO: Animate this trough scroll.
@@ -67,7 +67,7 @@ class Links extends React.Component {
       line.position.y = -0.2;
       line.position.x = 0;
       line.material.depthTest = false;
-      line.material.opacity = 0.5;
+      line.material.opacity = 1;
       line.material.transparent = true;
       line.material.color = new THREE.Color("darkslategrey");
 
@@ -75,6 +75,7 @@ class Links extends React.Component {
       animate();
       window.addEventListener("resize", onWindowResize, false);
     });
+
     function animate() {
       requestAnimationFrame(animate);
 
@@ -83,30 +84,29 @@ class Links extends React.Component {
 
       renderer.render(scene, camera);
     }
+
     function onWindowResize() {
       camera.aspect = parent.clientWidth / parent.clientHeight;
       camera.updateProjectionMatrix();
 
       renderer.setSize(parent.clientWidth, parent.clientHeight);
     }
+
   }
 
   setupScrollCameraControll(camera, trigger){
+
     const controller = new ScrollMagic.Controller();
     // TODO: re-calculate the duration on window resize.
     const scene = new ScrollMagic.Scene
     ({triggerElement: trigger,
-      duration: window.innerHeight,
+      duration: "90%",
       triggerHook: 1})
     .addTo(controller)
     .on("progress", function(e) {
-      console.log(e.progress.toFixed(3));
       camera.position.y = 150 - (e.progress.toFixed(3) * 150);
     });
-    window.addEventListener("resize", onWindowResize, false);
-    function onWindowResize(){
-      scene.duration = window.innerHeight;
-    }
+
   }
 
   renderLinks(section) {
