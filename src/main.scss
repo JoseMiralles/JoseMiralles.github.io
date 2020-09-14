@@ -81,8 +81,8 @@ body{
 
 .links-section{
     // Gradients
-    $mainGradientColor: lighten(theme-color("black"), 5%);
-    $darkGradient: $mainGradientColor, darken($mainGradientColor, 20%);
+    $mainGradientColor: lighten(theme-color("dark"), 0%);
+    $darkGradient: $mainGradientColor, darken($mainGradientColor, 40%);
     $direction: 110deg;
     background: -moz-linear-gradient($direction, $darkGradient);
     background: -o-linear-gradient($direction, $darkGradient);

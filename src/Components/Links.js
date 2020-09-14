@@ -26,7 +26,7 @@ class Links extends React.Component {
   componentDidMount() {
     this.setup3DComputer();
   }
-
+  
   setup3DComputer() {
     let scene, camera, renderer, controls;
     const parent = document.getElementById("PCModelWrapper");
@@ -41,6 +41,7 @@ class Links extends React.Component {
     );
     camera.position.z = 3.5;
     camera.position.x = 110;
+    camera.position.y = 0; // TODO: Animate this trough scroll.
     console.log(camera.aspect);
 
     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
