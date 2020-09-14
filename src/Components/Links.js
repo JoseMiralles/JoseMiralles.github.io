@@ -3,15 +3,17 @@ import { linksSection } from "../Data/ResumeSections.js";
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import ScrollMagic from "scrollmagic";
 
 class Links extends React.Component {
+
   render() {
     return (
       <div className="col links-section py-3">
         <div className="row link-section-row">
 
 
-        <div id="PCModelWrapper" className="w-100 h-100"></div>
+          <div id="PCModelWrapper" className="w-100 h-100"></div>
 
           <div className="col-md-6 offset-md-3 p-5 align-self-center">
             <ul className="list-group p-md-5">
@@ -24,25 +26,29 @@ class Links extends React.Component {
   }
 
   componentDidMount() {
-    this.setup3DComputer();
-  }
-  
-  setup3DComputer() {
-    let scene, camera, renderer, controls;
     const parent = document.getElementById("PCModelWrapper");
-
-    scene = new THREE.Scene();
-
-    camera = new THREE.PerspectiveCamera(
+    let camera = new THREE.PerspectiveCamera(
       1,
       parent.clientWidth / parent.clientHeight,
       1,
       1000
     );
+
+    // Start the 3d wireframe animation.
+    this.setup3DComputer(camera, parent);
+
+    // Change camera.position.y based on scrolling.
+    this.setupScrollCameraControll(camera, parent);
+  }
+
+  setup3DComputer(camera, parent) {
+    let scene, renderer, controls;
+
+    scene = new THREE.Scene();
+
     camera.position.z = 0;
     camera.position.x = 110;
     camera.position.y = 0; // TODO: Animate this trough scroll.
-    console.log(camera.aspect);
 
     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setSize(parent.clientWidth, parent.clientHeight);
@@ -56,7 +62,6 @@ class Links extends React.Component {
     const loader = new GLTFLoader();
     loader.load(require("../assets/z89pc.glb"), function (gltf) {
       const mesh = gltf.scene.children[0];
-      console.log(gltf);
       const wireframe = new THREE.WireframeGeometry(mesh.geometry);
       const line = new THREE.LineSegments(wireframe);
       line.position.y = -0.2;
@@ -83,7 +88,24 @@ class Links extends React.Component {
       camera.updateProjectionMatrix();
 
       renderer.setSize(parent.clientWidth, parent.clientHeight);
-      console.log(camera.aspect);
+    }
+  }
+
+  setupScrollCameraControll(camera, trigger){
+    const controller = new ScrollMagic.Controller();
+    // TODO: re-calculate the duration on window resize.
+    const scene = new ScrollMagic.Scene
+    ({triggerElement: trigger,
+      duration: window.innerHeight,
+      triggerHook: 1})
+    .addTo(controller)
+    .on("progress", function(e) {
+      console.log(e.progress.toFixed(3));
+      camera.position.y = 150 - (e.progress.toFixed(3) * 150);
+    });
+    window.addEventListener("resize", onWindowResize, false);
+    function onWindowResize(){
+      scene.duration = window.innerHeight;
     }
   }
 
