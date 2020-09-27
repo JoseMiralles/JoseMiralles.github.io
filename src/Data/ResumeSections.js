@@ -35,6 +35,25 @@
             darkTheme: false,
             items: [
                 {
+                    employer: "Craterd",
+                    jobTitle: "Built Complete Web App",
+                    imgSrc: require("../assets/crated_logo.png"),
+                    roundImg: true,
+                    description: "This is an unfinished, full stack ecommerce site for a fictional asteroid mining company built with the MERN stack.",
+                    highlights: [
+                        "Used React, with hooks for the front end.",
+                        "Used Firebase for user authentication, and to store user data (orders, payments)",
+                        "Used Node and Express to build a payment API with the Stripe SDK.",
+                        "Product data and images are loaded from a remote database",
+                        "Orders get stored in, and loaded from a noSQL database.",
+                        "Product images were modeled with Blender, and textured with Quixel Mixer."
+                    ],
+                    links: [
+                        { title: "Visit site", url: "https://craterd-cd6c8.web.app/" },
+                        { title: "View source", url: "https://github.com/JoseMiralles/craterd/" }
+                    ]
+                },
+                {
                     employer: "Instavel",
                     jobTitle: "Built Complete Web App",
                     imgSrc: require("../assets/instavel_logo.png"),

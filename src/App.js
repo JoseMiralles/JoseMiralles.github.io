@@ -12,7 +12,7 @@ function App() {
 
 
   return (
-    <div className="App m-xl-4 light_bg">
+    <div className="App light_bg">
       <HeroSection />
       <MainResumeSection section={[mainSections[0]]} />
       <Links />
