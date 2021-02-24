@@ -35,22 +35,36 @@
             darkTheme: false,
             items: [
                 {
-                    employer: "Craterd",
+                    employer: "RunChart",
                     jobTitle: "Built Complete Web App",
-                    imgSrc: require("../assets/crated_logo.png"),
+                    imgSrc: require("../assets/runchart_logo.png"),
                     roundImg: true,
-                    description: "This is an unfinished, full stack ecommerce site for a fictional asteroid mining company built with the MERN stack.",
+                    description: "A site that allows runners to find and create new running routes.",
                     highlights: [
-                        "Used React, with hooks for the front end.",
-                        "Used Firebase for user authentication, and to store user data (orders, payments)",
-                        "Used Node and Express to build a payment API with the Stripe SDK.",
-                        "Product data and images are loaded from a remote database",
-                        "Orders get stored in, and loaded from a noSQL database.",
-                        "Product images were modeled with Blender, and textured with Quixel Mixer."
+                        "Built CRUD API using Rails and PostgreSQL including an index route to filter routes by keywords and map bounds.",
+                        "Used the Google Maps API to implement a React component which allows users to create or edit running routes, as well as components to view routes and to find routes using an interactive map.",
+                        "Utilized the Google Maps Geometry library encode, and decode running routes to and from strings to facilitate storage."
                     ],
                     links: [
-                        { title: "Visit site", url: "https://craterd-cd6c8.web.app/" },
-                        { title: "View source", url: "https://github.com/JoseMiralles/craterd/" }
+                        { title: "Try it out", url: "https://run-chart.herokuapp.com/" },
+                        { title: "View source / readme", url: "https://github.com/JoseMiralles/RunChart#runchart" }
+                    ]
+                },
+                {
+                    employer: "Chaos VR",
+                    jobTitle: "Built Complete Game",
+                    imgSrc: require("../assets/chaos_vr_logo.png"),
+                    roundImg: true,
+                    description: "A WebXR / WebVR game built using Three.js",
+                    highlights: [
+                        "Implemented ticking system to animate objects,to simulate physics, and to detect collisions on every frame.",
+                        "Modeled and textured 3D meshes using Blender, and optimized them to use the least amount of vertices to achieve good performance on mobile VR headsets such as the Quest.",
+                        "Implemented a recycling system, where all assets such as projectiles, enemies, and sounds are reused to avoid expensive operations."
+                    ],
+                    links: [
+                        { title: "Try it out (VR Required)", url: "https://josemiralles.github.io/VR-Shooter/" },
+                        { title: "View source / readme", url: "https://github.com/JoseMiralles/VR-Shooter#vr-shooter" },
+                        { title: "View Gameplay Videos", url: "https://www.youtube.com/playlist?list=PLghWRYpL5zyWu1HgNfVpOLBVNuiOC8svX" }
                     ]
                 },
                 {
@@ -69,6 +83,25 @@
                     ],
                     links: [
                         { title: "View source", url: "https://github.com/JoseMiralles/Instavel" }
+                    ]
+                },
+                {
+                    employer: "Craterd",
+                    jobTitle: "Built Complete Web App",
+                    imgSrc: require("../assets/crated_logo.png"),
+                    roundImg: true,
+                    description: "This is an unfinished, full stack ecommerce site for a fictional asteroid mining company built with the MERN stack.",
+                    highlights: [
+                        "Used React, with hooks for the front end.",
+                        "Used Firebase for user authentication, and to store user data (orders, payments)",
+                        "Used Node and Express to build a payment API with the Stripe SDK.",
+                        "Product data and images are loaded from a remote database",
+                        "Orders get stored in, and loaded from a noSQL database.",
+                        "Product images were modeled with Blender, and textured with Quixel Mixer."
+                    ],
+                    links: [
+                        { title: "Visit site", url: "https://craterd-cd6c8.web.app/" },
+                        { title: "View source", url: "https://github.com/JoseMiralles/craterd/" }
                     ]
                 },
                 {

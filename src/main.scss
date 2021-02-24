@@ -40,6 +40,7 @@ body{
     .hero-sub-title{
         white-space: nowrap;
         font-size: 2rem;
+        letter-spacing: 13px;
     }
 
     .top-svg-group{
@@ -130,8 +131,8 @@ body{
     max-width: 50vw;
 }
 .rounded-img {
-    border-radius: 100rem;
-    border: 0.7rem solid darken(theme-color("light"), 5%);
+    // border-radius: 100rem;
+    // border: 0.7rem solid darken(theme-color("light"), 5%);
 }
 
 .built-with-react-wrapper{

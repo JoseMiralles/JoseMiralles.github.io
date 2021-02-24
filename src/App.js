@@ -2,7 +2,7 @@ import React from "react";
 
 import HeroSection from "./Components/HeroSection.js";
 import MainResumeSection from "./Components/MainResumeSection.js";
-import BuiltWithReact from "./Components/BuiltWithReact.js";
+// import BuiltWithReact from "./Components/BuiltWithReact.js";
 import Links from "./Components/Links.js"
 
 import { mainSections } from "./Data/ResumeSections.js";
@@ -17,7 +17,7 @@ function App() {
       <MainResumeSection section={[mainSections[0]]} />
       <Links />
       <MainResumeSection section={[mainSections[1]]} />
-      <BuiltWithReact />
+      {/* <BuiltWithReact /> */}
     </div>
   );
 }

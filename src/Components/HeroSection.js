@@ -50,15 +50,15 @@ class HeroSection extends React.Component {
             let target_element = document.querySelector("#poly_" + i);
             // Store default height (will get percentage since parent is hidden).
             gsap.from("#poly_" + i, {
-                duration: 6,
-                height: "0%",
+                duration: 4,
+                opacity: 0,
                 ease: "expo.out",
                 // Set height back to percentages when the animation stops playing.
                 onComplete: function () { target_element.style.height = null }
-            }).delay((i));
+            }).delay(i * 0.5);
         }
-        gsap.from("#hero-title", { duration: 3, opacity: 0, ease: "expo.out" }).delay(2);
-        gsap.from(".top-section-arrow", { duration: 3, opacity: 0, ease: "expo.out" }).delay(4);
+        gsap.from("#hero-title", { duration: 3, opacity: 0, ease: "expo.out" }).delay(1.5);
+        gsap.from(".top-section-arrow", { duration: 3, opacity: 0, ease: "expo.out" }).delay(2);
         topSection.style.display = "block"; // Show parent of polygons again.
     }
 }
