@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.784cf818.chunk.css",
+    "main.css": "/static/css/main.c7afb683.chunk.css",
     "main.js": "/static/js/main.70455463.chunk.js",
     "main.js.map": "/static/js/main.70455463.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.23041e79.js",
@@ -9,10 +9,10 @@
     "static/js/2.08c9bbc1.chunk.js": "/static/js/2.08c9bbc1.chunk.js",
     "static/js/2.08c9bbc1.chunk.js.map": "/static/js/2.08c9bbc1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.601c93ffdbe85782442ee9dd57faf71b.js": "/precache-manifest.601c93ffdbe85782442ee9dd57faf71b.js",
+    "precache-manifest.862beb576343c936ddbe94f86cc4863f.js": "/precache-manifest.862beb576343c936ddbe94f86cc4863f.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.8aa5a7f8.chunk.css.map": "/static/css/2.8aa5a7f8.chunk.css.map",
-    "static/css/main.784cf818.chunk.css.map": "/static/css/main.784cf818.chunk.css.map",
+    "static/css/main.c7afb683.chunk.css.map": "/static/css/main.c7afb683.chunk.css.map",
     "static/js/2.08c9bbc1.chunk.js.LICENSE.txt": "/static/js/2.08c9bbc1.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/static/media/BebasNeue-Regular.21bb70b6.ttf",
     "static/media/Eurolamy_logo.png": "/static/media/Eurolamy_logo.f71515ee.png",
@@ -32,7 +32,7 @@
     "static/js/runtime-main.23041e79.js",
     "static/css/2.8aa5a7f8.chunk.css",
     "static/js/2.08c9bbc1.chunk.js",
-    "static/css/main.784cf818.chunk.css",
+    "static/css/main.c7afb683.chunk.css",
     "static/js/main.70455463.chunk.js"
   ]
 }
