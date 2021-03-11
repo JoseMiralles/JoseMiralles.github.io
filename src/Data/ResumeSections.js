@@ -53,7 +53,7 @@
                 {
                     employer: "Chaos VR",
                     jobTitle: "Built Complete Game",
-                    imgSrc: require("../assets/chaos_vr_logo.png"),
+                    imgSrc: require("../assets/chaos_vr_game_gif.gif"),
                     roundImg: true,
                     description: "A WebXR / WebVR game built using Three.js",
                     highlights: [

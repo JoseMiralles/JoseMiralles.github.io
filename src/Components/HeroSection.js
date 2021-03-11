@@ -51,7 +51,7 @@ class HeroSection extends React.Component {
             // Store default height (will get percentage since parent is hidden).
             gsap.from("#poly_" + i, {
                 duration: 4,
-                opacity: 0,
+                height: 0,
                 ease: "expo.out",
                 // Set height back to percentages when the animation stops playing.
                 onComplete: function () { target_element.style.height = null }
