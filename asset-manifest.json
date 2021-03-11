@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.c7afb683.chunk.css",
-    "main.js": "/static/js/main.70455463.chunk.js",
-    "main.js.map": "/static/js/main.70455463.chunk.js.map",
+    "main.css": "/static/css/main.fd895aa3.chunk.css",
+    "main.js": "/static/js/main.751ff30e.chunk.js",
+    "main.js.map": "/static/js/main.751ff30e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.23041e79.js",
     "runtime-main.js.map": "/static/js/runtime-main.23041e79.js.map",
     "static/css/2.8aa5a7f8.chunk.css": "/static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.08c9bbc1.chunk.js": "/static/js/2.08c9bbc1.chunk.js",
-    "static/js/2.08c9bbc1.chunk.js.map": "/static/js/2.08c9bbc1.chunk.js.map",
+    "static/js/2.e18022da.chunk.js": "/static/js/2.e18022da.chunk.js",
+    "static/js/2.e18022da.chunk.js.map": "/static/js/2.e18022da.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.862beb576343c936ddbe94f86cc4863f.js": "/precache-manifest.862beb576343c936ddbe94f86cc4863f.js",
+    "precache-manifest.00ec82f6e2551e7c2d516da507c329d9.js": "/precache-manifest.00ec82f6e2551e7c2d516da507c329d9.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.8aa5a7f8.chunk.css.map": "/static/css/2.8aa5a7f8.chunk.css.map",
-    "static/css/main.c7afb683.chunk.css.map": "/static/css/main.c7afb683.chunk.css.map",
-    "static/js/2.08c9bbc1.chunk.js.LICENSE.txt": "/static/js/2.08c9bbc1.chunk.js.LICENSE.txt",
+    "static/css/main.fd895aa3.chunk.css.map": "/static/css/main.fd895aa3.chunk.css.map",
+    "static/js/2.e18022da.chunk.js.LICENSE.txt": "/static/js/2.e18022da.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/static/media/BebasNeue-Regular.21bb70b6.ttf",
     "static/media/Eurolamy_logo.png": "/static/media/Eurolamy_logo.f71515ee.png",
     "static/media/Maxx_isometric-ish_downscaled.png": "/static/media/Maxx_isometric-ish_downscaled.08f5e6a8.png",
     "static/media/TAC-Logo.png": "/static/media/TAC-Logo.967db2ee.png",
     "static/media/blender_logo.png": "/static/media/blender_logo.960cf57e.png",
-    "static/media/chaos_vr_logo.png": "/static/media/chaos_vr_logo.a87b282d.png",
+    "static/media/chaos_vr_game_gif.gif": "/static/media/chaos_vr_game_gif.264fb9ca.gif",
     "static/media/cpplogo.png": "/static/media/cpplogo.466b21ae.png",
     "static/media/crated_logo.png": "/static/media/crated_logo.b5b81c4d.png",
     "static/media/gifaroo_icon.png": "/static/media/gifaroo_icon.f732ce44.png",
@@ -31,8 +31,8 @@
   "entrypoints": [
     "static/js/runtime-main.23041e79.js",
     "static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.08c9bbc1.chunk.js",
-    "static/css/main.c7afb683.chunk.css",
-    "static/js/main.70455463.chunk.js"
+    "static/js/2.e18022da.chunk.js",
+    "static/css/main.fd895aa3.chunk.css",
+    "static/js/main.751ff30e.chunk.js"
   ]
 }
