@@ -115,6 +115,7 @@ class Links extends React.Component {
         <a
           key={index}
           className="link-tem list-group-item text-center m-md-3 my-3 rounded list-group-item-action"
+          target="_blank"
           href={item.url}
         >
           {item.title}

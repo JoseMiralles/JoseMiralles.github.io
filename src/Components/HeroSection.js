@@ -44,6 +44,7 @@ class HeroSection extends React.Component {
         // GASP - Animations
         let polygons_to_animate = 3;
         let topSection = document.querySelector(".top-svg-group");
+        let multiplier = 0.5;
 
         // Intro animations.
         for (let i = 1; i <= polygons_to_animate; i++) {
@@ -55,7 +56,8 @@ class HeroSection extends React.Component {
                 ease: "expo.out",
                 // Set height back to percentages when the animation stops playing.
                 onComplete: function () { target_element.style.height = null }
-            }).delay(i * 0.5);
+            }).delay(i * multiplier);
+            multiplier *= 1.1;
         }
         gsap.from("#hero-title", { duration: 3, opacity: 0, ease: "expo.out" }).delay(1.5);
         gsap.from(".top-section-arrow", { duration: 3, opacity: 0, ease: "expo.out" }).delay(2);

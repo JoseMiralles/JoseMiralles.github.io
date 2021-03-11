@@ -45,7 +45,7 @@ class ResumeItem extends React.Component {
         let links = "";
         if (data.links) {
             links = data.links.map((link, index) => {
-                return <div><a key={index} href={link.url}>- {link.title} &gt;</a></div>;
+                return <div><a key={index} target="_blank" href={link.url}>- {link.title} &gt;</a></div>;
             });
         }
 

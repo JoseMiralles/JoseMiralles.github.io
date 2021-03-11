@@ -13,7 +13,7 @@ class ResumeItem extends React.Component {
     if (this.props.linkSectionItem) {
       return (
         <div className="col-lg-4 linkItem">
-          <a href={item.url}>
+          <a target="_blank" href={item.url}>
             <h5>- {item.title} -></h5>
           </a>
         </div>
@@ -34,7 +34,7 @@ class ResumeItem extends React.Component {
       links = item.links.map((link) => {
         return (
           <p className="strong text-muted remove-bottom-margin">
-            <a href={link.url}>- {link.title} -&gt;</a>
+            <a href={link.url} target="_blank">- {link.title} -&gt;</a>
           </p>
         );
       });
@@ -49,7 +49,7 @@ class ResumeItem extends React.Component {
     let imgTag = null;
     if (item.links) {
       imgTag = (
-        <a href={item.links[0].url}>
+        <a target="_blank" href={item.links[0].url}>
           <img className={imgClassNames} src={item.imgSrc} alt="Resume item" />
         </a>
       );
