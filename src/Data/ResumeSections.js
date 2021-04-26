@@ -64,7 +64,7 @@
                         "Implemented a recycling system, where all assets such as projectiles, enemies, and sounds are reused to avoid expensive operations."
                     ],
                     links: [
-                        { title: "Try it out (VR Required)", url: "https://josemiralles.github.io/VR-Shooter/" },
+                        { title: "Try it out (VR Required)", url: "/Chaos-VR/" },
                         { title: "View source / readme", url: "https://github.com/JoseMiralles/VR-Shooter#vr-shooter" },
                         { title: "View Gameplay Videos", url: "https://www.youtube.com/playlist?list=PLghWRYpL5zyWu1HgNfVpOLBVNuiOC8svX" }
                     ]
