@@ -1,6 +1,9 @@
 .vscode/
 Cyberpunk Scene/AFrame_CyberP_Scene/.vscode/
 
+node_modules/
+package-lock.json
+
 # Logs
 logs
 *.log
