@@ -9,8 +9,18 @@
             darkTheme: true,
             items: [
                 {
+                    employer: "Bank of America",
+                    jobTitle: "Systems Architect",
+                    imgSrc: require("../assets/bofa_logo.png"),
+                    roundImg: false,
+                    dateRange: "July 2021 - Current",
+                    highlights: [
+                        "Implements solutions to automate workflows using different toolsets."
+                    ]
+                },
+                {
                     employer: "Maxx Potential",
-                    jobTitle: "Apprentice Web Developer",
+                    jobTitle: "Software Developer",
                     imgSrc: require("../assets/Maxx_isometric-ish_downscaled.png"),
                     roundImg: false,
                     dateRange: "May 2019 - February 2020",
@@ -35,23 +45,6 @@
             darkTheme: false,
             items: [
                 {
-                    employer: "RunChart",
-                    jobTitle: "Built Complete Web App",
-                    imgSrc: require("../assets/runchart_logo.png"),
-                    roundImg: true,
-                    description: "A site that allows runners to find and create new running routes.",
-                    highlights: [
-                        "< React / Redux / Rails / SQL >",
-                        "Built CRUD API using Rails and PostgreSQL including an index route to filter routes by keywords and map bounds.",
-                        "Used the Google Maps API to implement a React component which allows users to create or edit running routes, as well as components to view routes and to find routes using an interactive map.",
-                        "Utilized the Google Maps Geometry library encode, and decode running routes to and from strings to facilitate storage."
-                    ],
-                    links: [
-                        { title: "Try it out", url: "https://run-chart.herokuapp.com/" },
-                        { title: "View source / readme", url: "https://github.com/JoseMiralles/RunChart#runchart" }
-                    ]
-                },
-                {
                     employer: "Chaos VR",
                     jobTitle: "Built Complete Game",
                     imgSrc: require("../assets/chaos_vr_game_gif.gif"),
@@ -67,6 +60,37 @@
                         { title: "Try it out (VR Required)", url: "/Chaos-VR/" },
                         { title: "View source / readme", url: "https://github.com/JoseMiralles/VR-Shooter#vr-shooter" },
                         { title: "View Gameplay Videos", url: "https://www.youtube.com/playlist?list=PLghWRYpL5zyWu1HgNfVpOLBVNuiOC8svX" }
+                    ]
+                },
+                {
+                    employer: "TypeScript Test Generator",
+                    jobTitle: "Built Complete Generator",
+                    imgSrc: require("../assets/meta_image.jpg"),
+                    roundImg: true,
+                    description: "A generator wich creates a set of typescript problems and Jasmine.js tests from a popular list of 75 curated tests.",
+                    highlights: [
+                        "Built generator with TypeScript and Node.",
+                        "Wrote all Jasmine tests using TypeScript."
+                    ],
+                    links: [
+                        { title: "GitHub Repo", url: "https://github.com/JoseMiralles/CuratedListTestGenerator#curatedlisttestgenerator" },
+                    ]
+                },
+                {
+                    employer: "RunChart",
+                    jobTitle: "Built Complete Web App",
+                    imgSrc: require("../assets/runchart_logo.png"),
+                    roundImg: true,
+                    description: "A site that allows runners to find and create new running routes.",
+                    highlights: [
+                        "< React / Redux / Rails / SQL >",
+                        "Built CRUD API using Rails and PostgreSQL including an index route to filter routes by keywords and map bounds.",
+                        "Used the Google Maps API to implement a React component which allows users to create or edit running routes, as well as components to view routes and to find routes using an interactive map.",
+                        "Utilized the Google Maps Geometry library encode, and decode running routes to and from strings to facilitate storage."
+                    ],
+                    links: [
+                        { title: "Try it out", url: "https://run-chart.herokuapp.com/" },
+                        { title: "View source / readme", url: "https://github.com/JoseMiralles/RunChart#runchart" }
                     ]
                 },
                 {

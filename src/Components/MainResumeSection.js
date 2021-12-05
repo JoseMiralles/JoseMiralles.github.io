@@ -38,9 +38,9 @@ class ResumeItem extends React.Component {
     render() {
         const data = this.props.data;
 
-        const highlights = data.highlights.map((hl, index) => {
+        const highlights = data.highlights ? data.highlights.map((hl, index) => {
             return <li key={index}>{hl}</li>;
-        });
+        }) : null;
 
         let links = "";
         if (data.links) {
@@ -53,6 +53,7 @@ class ResumeItem extends React.Component {
 
         return (
             <div className={"row border m-sm-5" + reverseFlex} key={this.props.index}>
+                
                 {/*Image and title*/}
                 <div className="col-md-5 py-5 align-self-center">
                     <div className="row">
@@ -76,7 +77,7 @@ class ResumeItem extends React.Component {
                 </div>
 
                 {/* Bullet points and description. */}
-                <div className="col-md-7 d-flex py-3 dark_bg">
+                {highlights !== null &&                 <div className="col-md-7 d-flex py-3 dark_bg">
                     <div className="row">
                         <div className="col-md-10 p-4 align-self-center offset-md-1">
                             {data.description ? (
@@ -89,7 +90,7 @@ class ResumeItem extends React.Component {
                             {/* Bullet points */}
                             <ul>{highlights}</ul>
                         </div></div>
-                </div>
+                </div>}
             </div>
         );
     }
