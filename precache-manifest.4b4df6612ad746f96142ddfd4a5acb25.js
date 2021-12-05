@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9cd76b60d8eea0b4c6efcdeb8090c536",
+    "revision": "0af8bc16a5b87fd08700910e335cf0f6",
     "url": "/index.html"
   },
   {
-    "revision": "3e945514fdae12cec4e7",
-    "url": "/static/css/2.8aa5a7f8.chunk.css"
+    "revision": "1c148816c212c9e590eb",
+    "url": "/static/css/2.df84d89f.chunk.css"
   },
   {
-    "revision": "8cfb8b424f1bdc67d8c6",
-    "url": "/static/css/main.fd895aa3.chunk.css"
+    "revision": "602d0c8c4e6f6a70f003",
+    "url": "/static/css/main.dded8cdd.chunk.css"
   },
   {
-    "revision": "3e945514fdae12cec4e7",
-    "url": "/static/js/2.e18022da.chunk.js"
+    "revision": "1c148816c212c9e590eb",
+    "url": "/static/js/2.a70a7222.chunk.js"
   },
   {
-    "revision": "9acccc75d38cfb861730bb747009af47",
-    "url": "/static/js/2.e18022da.chunk.js.LICENSE.txt"
+    "revision": "d842d80849681ac8b01fad89246951fc",
+    "url": "/static/js/2.a70a7222.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8cfb8b424f1bdc67d8c6",
-    "url": "/static/js/main.97ed894d.chunk.js"
+    "revision": "602d0c8c4e6f6a70f003",
+    "url": "/static/js/main.d9aaee33.chunk.js"
   },
   {
     "revision": "16d50208a04408d1bf24",
@@ -48,6 +48,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/blender_logo.960cf57e.png"
   },
   {
+    "revision": "cfa389037f9a980996192771b88e9340",
+    "url": "/static/media/bofa_logo.cfa38903.png"
+  },
+  {
     "revision": "264fb9ca882116a8442574753a06e1d4",
     "url": "/static/media/chaos_vr_game_gif.264fb9ca.gif"
   },
@@ -66,6 +70,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ef469f6713b2fad687d1f189955b818e",
     "url": "/static/media/instavel_logo.ef469f67.png"
+  },
+  {
+    "revision": "c04d20d5323775585bd9110c7967415d",
+    "url": "/static/media/meta_image.c04d20d5.jpg"
   },
   {
     "revision": "9219d8453282ce15906c2416078dcaa9",
