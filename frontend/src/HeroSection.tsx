@@ -7,7 +7,7 @@ const HeroSection = () => {
     return (
         <div id="hero-section" className="center column">
 
-            <h1 id="hero-title">JOSE MIRALLES</h1>
+            <h1 id="hero-title">Jose Miralles</h1>
 
             <div id="hero-jobtitle">Systems Engineer</div>
             
