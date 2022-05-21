@@ -1,0 +1,35 @@
+@use "../values" as values;
+
+#projects-section {
+    
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 1em;
+
+    .tabs {
+
+        border: 1px solid whitesmoke;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        & > * {
+            padding: 1em;
+            margin: 0.3em;
+            white-space: nowrap;
+        }
+    }
+
+    .tab {
+        &.selected, &:hover {
+            box-shadow: values.$shadow;
+            cursor: default;
+        }
+    }
+}
+
+
