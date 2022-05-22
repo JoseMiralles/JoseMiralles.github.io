@@ -1,14 +1,21 @@
 
+@use "sass:math";
 @use "./values" as values;
+
+$font-size-1: 3em;
+$font-size-2: $font-size-1 * 0.618;
+$font-size-3: $font-size-2 * 0.618;
+$font-size-4: $font-size-3 * 0.618;
 
 #hero-section {
     padding-top: 6em;
-    padding-bottom: 2em;
-    color: values.$light;
+    padding-bottom: 3em;
+    color: values.$white1;
+    background-color: values.$black2;
 }
 
 #hero-title {
-    font-size: 3em;
+    font-size: $font-size-1;
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
     margin-top: 0px;
@@ -16,9 +23,9 @@
 }
 
 #hero-jobtitle, #hero-company {
-    margin-bottom: 0.4em;
+    margin-bottom: 0.2em;
     font-family: 'Raleway', sans-serif;
-    font-size: 0.9em;
+    // font-size: $font-size-1 * math.pow(0.618, 2);
 }
 
 #hero-jobtitle {
@@ -27,5 +34,6 @@
 }
 
 #hero-company {
-    font-weight: 600;
+    font-style: italic;
+    font-weight: 300;
 }

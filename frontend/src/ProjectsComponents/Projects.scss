@@ -5,7 +5,7 @@
     flex-direction: column;
 
     .tabs {
-        border: 1px solid whitesmoke;
+        // border: 1px solid whitesmoke;
         // color: dimgray;
         // background-color: whitesmoke;
 
@@ -15,19 +15,22 @@
         justify-content: center;
         min-width: 100vw;
         font-weight: bold;
-        color: values.$light;
+        font-size: 0.9em;
+        color: values.$white1;
+        background-color: values.$black2;
 
         & > * {
             padding: 1em;
             margin: 0em 0.3em 0em 0.3em;
             white-space: nowrap;
+            border-radius: 2px 2px 0px 0px;
         }
     }
 
     .tab {
         &.selected, &:hover {
             // box-shadow: values.$shadow;
-            border-bottom: solid black 1px;
+            background-color: values.$white1;
             color: black;
             cursor: default;
         }
@@ -41,11 +44,16 @@
 
     .p-list-description {
         text-align: center;
-        padding: 2em;
-        color: values.$light;
+        padding: 1em;
+        padding-top: 3em;
+        color: values.$black2;
     }
 
     .project-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .project-item-card {
@@ -53,17 +61,29 @@
         padding: 0.5em 0em 01em 2em;
         // border: solid whitesmoke;
         // border-width: 1px 0px 1px 0px;
-        max-width: 80vw;
+        max-width: 600px;
+        width: 80vw;
+
+        .project-description {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: values.$black2;
+        }
 
         &:hover {
             // border-left: solid 1px black;
-            background-color: black;
-            color: white;
-            cursor:pointer;
+            background-color: values.$black2;
+            color: white !important;
+            cursor: pointer;
 
             .tech-pill {
-                background-color: black !important;
-                border: dimgray solid 1px;
+                background-color: transparent !important;
+                // border: values.$white2 solid 1px;
+            }
+
+            .project-description {
+                color: values.$white2;
             }
         }
 
@@ -83,7 +103,7 @@
                 }
 
                 &.tech-pill {
-                    background-color: whitesmoke;
+                    background-color: values.$white2;
                     border-radius: 1000px;
                     padding: 0.1em 1em 0.1em 1em;
                     margin: 0em 0.1em 0em 0.1em;
@@ -99,13 +119,6 @@
                     padding-left: 0em;
                 }
             }            
-        }
-
-        .project-description {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            color: values.$light;
         }
     }
 }
