@@ -1,33 +1,33 @@
 import React from "react";
 
-import "./ProjectList.scss";
 import { IProject, IProjectList } from "./ProjectsData";
 
-const ProjectList = (pl: IProjectList) => {
+interface IParams {
+    pl: IProjectList
+}
+
+const ProjectList = ({pl}: IParams) => {
 
     return (
-        <div className="fill-screen project-section">
+        <div className="project-section">
 
-            <div className="top-section">
-                <div className="title">{pl.title}</div>
-                <div className="description">{pl.description}</div>
-            </div>
+            {pl.description && (
+                <div className={"p-list-description-wrapper"}>
+                    <div className="p-list-description">{pl.description}</div>
+                </div>
+            )}
 
             <div className="project-list">
                 {pl.projects.map(p => (
-                    <div className="project-item">
+                    <div className="project-item-card">
 
-                        <div className="project-name">{p.name}</div>
-                        <div className="project-description">{p.description}</div>
-                        
-                        <div className="links-list">
-                            {p.links.map(l => (
-                                <a
-                                    className="project-link"
-                                    href={l.url}
-                                >{l.title}</a>
+                        <div className="project-top-bar">
+                            <span className="project-name">{p.name}</span>
+                            {p.technologies.map((t, i) => (
+                                <span className="tech-pill">{t}</span>
                             ))}
                         </div>
+                        <div className="project-description">{p.description}</div>
 
                     </div>
                 ))}

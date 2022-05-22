@@ -1,33 +1,107 @@
 @use "../values" as values;
 
 #projects-section {
-    
-    width: 100vw;
     display: flex;
     flex-direction: column;
 
-    padding-top: 1em;
-
     .tabs {
 
-        border: 1px solid whitesmoke;
+        border-bottom: 1px solid whitesmoke;
+        // color: dimgray;
+        // background-color: whitesmoke;
 
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        min-width: 100vw;
 
         & > * {
             padding: 1em;
-            margin: 0.3em;
+            margin: 0em 0.3em 0em 0.3em;
             white-space: nowrap;
         }
     }
 
     .tab {
         &.selected, &:hover {
-            box-shadow: values.$shadow;
+            // box-shadow: values.$shadow;
+            border-bottom: solid black 1px;
+            color: black;
             cursor: default;
+        }
+    }
+
+    .p-list-description-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .p-list-description {
+        text-align: center;
+        padding: 2em;
+    }
+
+    .project-list {
+    }
+
+    .project-item-card {
+        
+        padding: 0.5em 0em 01em 2em;
+        border: solid 1px whitesmoke;
+        max-width: 80vw;
+
+        &:hover {
+            // border-left: solid 1px black;
+            background-color: black;
+            color: white;
+            cursor:pointer;
+
+            .tech-pill {
+                background-color: black !important;
+                border: dimgray solid 1px;
+            }
+        }
+
+        .project-top-bar {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: hidden;
+            flex-direction: row;
+            padding-bottom: 0.1em;
+            align-items: center;
+
+            & > span {
+                white-space: nowrap;
+
+                &:not(:last-child) {
+                    padding-right: 0.2em;
+                }
+
+                &.tech-pill {
+                    background-color: whitesmoke;
+                    border-radius: 1000px;
+                    padding: 0.1em 1em 0.1em 1em;
+                    margin: 0em 0.1em 0em 0.1em;
+                    font-size: 0.7em;
+                }
+
+                &.project-name {
+                    font-size: 1.1em;
+                    font-weight: bold;
+                    width: fit-content;
+                    padding: 0.5em;
+                    padding-right: 1em;
+                    padding-left: 0em;
+                }
+            }            
+        }
+
+        .project-description {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
 }

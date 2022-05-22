@@ -1,11 +1,13 @@
 import React, { useState } from "react";
+import ProjectList from "./ProjectList";
 
 import "./Projects.scss";
 import { projectLists } from "./ProjectsData";
 
 const ProjectSection = () => {
 
-    const [selectedTab, setSelectedTab] = useState(projectLists[0].title);
+    const [selectedTab, setSelectedTab] = useState(projectLists[1].title);
+    const selectedProjectList = projectLists.find(l => (l.title === selectedTab));
 
     const onClick = (name: string) => {
         return () => {
@@ -26,6 +28,8 @@ const ProjectSection = () => {
                     </div>
                 ))}
             </div>
+
+            {selectedProjectList && (<ProjectList pl={selectedProjectList}/>)}
 
         </div>
     );
