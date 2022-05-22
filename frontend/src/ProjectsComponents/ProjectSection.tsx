@@ -6,7 +6,7 @@ import { projectLists } from "./ProjectsData";
 
 const ProjectSection = () => {
 
-    const [selectedTab, setSelectedTab] = useState(projectLists[1].title);
+    const [selectedTab, setSelectedTab] = useState(projectLists[0].title);
     const selectedProjectList = projectLists.find(l => (l.title === selectedTab));
 
     const onClick = (name: string) => {

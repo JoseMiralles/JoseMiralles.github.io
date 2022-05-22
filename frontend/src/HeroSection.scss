@@ -1,30 +1,31 @@
 
+@use "./values" as values;
+
 #hero-section {
     padding-top: 6em;
     padding-bottom: 2em;
+    color: values.$light;
 }
 
 #hero-title {
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
     margin-top: 0px;
-    margin-bottom: 0.6em;
+    margin-bottom: 0.3em;
 }
 
 #hero-jobtitle, #hero-company {
     margin-bottom: 0.4em;
     font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
 }
 
 #hero-jobtitle {
     letter-spacing: 0.1em;
-    font-size: 1.2em;
     font-weight: 300;
-    font-size: 1.3em;
 }
 
 #hero-company {
     font-weight: 600;
-    font-size: 1em;
 }
