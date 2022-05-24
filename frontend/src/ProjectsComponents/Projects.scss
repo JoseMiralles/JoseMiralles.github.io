@@ -12,10 +12,10 @@
         min-width: 100vw;
         font-weight: bold;
         color: values.$white1;
-        background-color: values.$black2;
+        background-color: values.$main;
 
         & > * {
-            padding: 10px 12px 8px 12px;
+            padding: 10px 16px 8px 16px;
             margin: 0px 3px 0px 3px;
             white-space: nowrap;
             border-radius: 2px 2px 0px 0px;
@@ -51,8 +51,11 @@
         align-items: center;
     }
 
+    $project-card-height: 130px;
+
     .project-item-card {
 
+        position: relative;
         display: flex;
         flex-direction: row;
         max-width: 600px;
@@ -61,10 +64,11 @@
         margin-bottom: 15px;
         justify-content: flex-start;
         align-items: flex-start;
+        height: $project-card-height;
 
         .project-card-image {
             object-fit: cover;
-            height: 130px;
+            height: 100%;
             width: 180px;
             flex-grow: 1;
         }
@@ -84,11 +88,25 @@
             color: values.$black2;
         }
 
+        .foreground-gradient {
+            width: 100%;
+            max-width: 600px;
+            height: $project-card-height;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: linear-gradient(90deg, rgba(255,255,255,0) 73%, rgba(255,255,255,1) 100%);
+        }
+        
         &:hover {
             // border-left: solid 1px black;
-            background-color: values.$black2;
+            background-color: values.$main;
             color: white !important;
             cursor: pointer;
+            
+            .foreground-gradient {
+                background: linear-gradient(90deg, rgba(47,79,79,0) 73%, rgba(47,79,79,1) 100%);
+            }
 
             .tech-pill {
                 background-color: transparent !important;

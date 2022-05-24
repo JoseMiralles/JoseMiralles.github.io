@@ -34,7 +34,8 @@ const ProjectList = ({pl}: IParams) => {
                             <div className="project-description">{p.description}</div>
                         </div>
 
-
+                        <div className="foreground-gradient"></div>
+                        
                     </div>
                 ))}
 

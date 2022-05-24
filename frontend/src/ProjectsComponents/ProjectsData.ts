@@ -93,7 +93,7 @@ export const projectLists: IProjectList[] = [
     },
     {
         title: "Other Projects",
-        description: "Projects that are small, unfinished, or unpublished. And they are created for the purpose of learning.",
+        description: "Projects that are small, unfinished, or unpublished. And are created for the purpose of learning.",
         projects: [
             {
                 name: "InTalk",
