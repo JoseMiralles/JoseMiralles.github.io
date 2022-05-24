@@ -5,23 +5,18 @@
     flex-direction: column;
 
     .tabs {
-        // border: 1px solid whitesmoke;
-        // color: dimgray;
-        // background-color: whitesmoke;
-
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         min-width: 100vw;
         font-weight: bold;
-        font-size: 0.9em;
         color: values.$white1;
         background-color: values.$black2;
 
         & > * {
-            padding: 1em;
-            margin: 0em 0.3em 0em 0.3em;
+            padding: 10px 12px 8px 12px;
+            margin: 0px 3px 0px 3px;
             white-space: nowrap;
             border-radius: 2px 2px 0px 0px;
         }
@@ -44,8 +39,8 @@
 
     .p-list-description {
         text-align: center;
-        padding: 1em;
-        padding-top: 3em;
+        padding: 30px;
+        padding-top: 60px;
         color: values.$black2;
     }
 
@@ -57,17 +52,35 @@
     }
 
     .project-item-card {
-        
-        padding: 0.5em 0em 01em 2em;
-        // border: solid whitesmoke;
-        // border-width: 1px 0px 1px 0px;
+
+        display: flex;
+        flex-direction: row;
         max-width: 600px;
         width: 80vw;
+        overflow: hidden;
+        margin-bottom: 15px;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .project-card-image {
+            object-fit: cover;
+            height: 130px;
+            width: 180px;
+            flex-grow: 1;
+        }
+
+        .project-card-info {
+            padding: 20px 0px 20px 25px;
+            flex-grow: 1;
+            min-width: 0px;
+        }
 
         .project-description {
-            white-space: nowrap;
+            display: -webkit-box;
+            line-height: 24px;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;  
             overflow: hidden;
-            text-overflow: ellipsis;
             color: values.$black2;
         }
 
@@ -79,7 +92,6 @@
 
             .tech-pill {
                 background-color: transparent !important;
-                // border: values.$white2 solid 1px;
             }
 
             .project-description {
@@ -92,31 +104,31 @@
             flex-wrap: nowrap;
             overflow: hidden;
             flex-direction: row;
-            padding-bottom: 0.1em;
+            margin-bottom: 9px;
             align-items: center;
 
             & > span {
                 white-space: nowrap;
 
                 &:not(:last-child) {
-                    padding-right: 0.2em;
+                    padding-right: 2px;
                 }
 
                 &.tech-pill {
                     background-color: values.$white2;
                     border-radius: 1000px;
-                    padding: 0.1em 1em 0.1em 1em;
-                    margin: 0em 0.1em 0em 0.1em;
-                    font-size: 0.7em;
+                    padding: 1px 10px 1px 10px;
+                    margin: 0px 1px 0px 1px;
+                    font-size: 16px;
                 }
 
                 &.project-name {
-                    font-size: 1.1em;
+                    font-size: 16px;
                     font-weight: bold;
                     width: fit-content;
-                    padding: 0.5em;
-                    padding-right: 1em;
-                    padding-left: 0em;
+                    padding: 5px;
+                    padding-right: 20px;
+                    padding-left: 0px;
                 }
             }            
         }

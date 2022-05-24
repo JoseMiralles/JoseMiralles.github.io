@@ -18,19 +18,26 @@ const ProjectList = ({pl}: IParams) => {
             )}
 
             <div className="project-list">
+
                 {pl.projects.map(p => (
                     <div className="project-item-card">
+                        
+                        {p.image && ( <img className="project-card-image" src={p.image}/> )}
 
-                        <div className="project-top-bar">
-                            <span className="project-name">{p.name}</span>
-                            {p.technologies.map((t, i) => (
-                                <span className="tech-pill">{t}</span>
-                            ))}
+                        <div className="project-card-info">
+                            <div className="project-top-bar">
+                                <span className="project-name">{p.name}</span>
+                                {p.technologies.map((t, i) => (
+                                    <span className="tech-pill">{t}</span>
+                                    ))}
+                            </div>
+                            <div className="project-description">{p.description}</div>
                         </div>
-                        <div className="project-description">{p.description}</div>
+
 
                     </div>
                 ))}
+
             </div>
 
         </div>

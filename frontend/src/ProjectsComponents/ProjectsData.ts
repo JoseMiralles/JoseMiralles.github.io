@@ -1,6 +1,7 @@
 
 export const technologiesArr = [
     "HTML", "CSS", "SCSS", "JavaScript", "TypeScript",
+    "Node", "Jasmine",
     "React", "Redux", "Custom-Redux-Middleware",
     "JWT", "Refresh Tokens", "Identity Provider",
     "C#", "ASP", "Xamarin", "SignalR",
@@ -42,8 +43,9 @@ export const projectLists: IProjectList[] = [
             {
                 name: "CHAOS VR",
                 description: (
-                    "A VR game built using Three.js and JavaScript."
+                    "A web VR game built using Three.js and JavaScript. Optimized to run on Quest."
                 ),
+                image: "/img/chaos_vr.gif",
                 highlights: [
                     "Modeled all assets using Blender.",
                     "Created asset pools to recycle actors such as enemies, projectiles, and sounds.",
@@ -66,12 +68,32 @@ export const projectLists: IProjectList[] = [
                 technologies: [
                     "JavaScript", "ThreeJS", "Blender", "Webpack"
                 ]
+            },
+            {
+                name: "TS Test Generator",
+                description: (
+                    "A test generator wich creates a set of typescript problems and Jasmine.js tests from a popular curated list of 75 problems."
+                ),
+                image: "img/ts_test_gen.jpg",
+                highlights: [
+                    "Built generator with TypeScript and Node.",
+                    "Wrote all Jasmine tests using TypeScript."
+                ],
+                links: [
+                    {
+                        title: "GitHub",
+                        url: "https://github.com/JoseMiralles/CuratedListTestGenerator#curatedlisttestgenerator",
+                    },
+                ],
+                technologies: [
+                    "TypeScript", "Node", "Jasmine"
+                ]
             }
         ]
     },
     {
         title: "Other Projects",
-        description: "Projects created for the purpose of learning new concepts.",
+        description: "Projects that are small, unfinished, or unpublished. And they are created for the purpose of learning.",
         projects: [
             {
                 name: "InTalk",
