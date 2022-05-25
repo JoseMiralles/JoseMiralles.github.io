@@ -1,4 +1,6 @@
 import React from "react";
+import { useSetRecoilState } from "recoil";
+import { modalState } from "../state";
 
 import { IProject, IProjectList } from "./ProjectsData";
 
@@ -7,6 +9,13 @@ interface IParams {
 }
 
 const ProjectList = ({pl}: IParams) => {
+
+    const setModal = useSetRecoilState(modalState);
+
+    const onClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+        const modalName: string = (e.target as any).getAttribute("data-index");
+        if (modalName.length) setModal(modalName);
+    };
 
     return (
         <div className="project-section">
@@ -17,10 +26,14 @@ const ProjectList = ({pl}: IParams) => {
                 </div>
             )}
 
-            <div className="project-list">
+            <div
+                onClick={onClick}
+                className="project-list">
 
                 {pl.projects.map(p => (
-                    <div className="project-item-card">
+                    <div
+                        data-index={p.name}
+                        className="project-item-card">
                         
                         {p.image && ( <img className="project-card-image" src={p.image}/> )}
 
@@ -34,7 +47,10 @@ const ProjectList = ({pl}: IParams) => {
                             <div className="project-description">{p.description}</div>
                         </div>
 
-                        <div className="foreground-gradient"></div>
+                        <div
+                            data-index={p.name}
+                            className="foreground-gradient"
+                        ></div>
                         
                     </div>
                 ))}

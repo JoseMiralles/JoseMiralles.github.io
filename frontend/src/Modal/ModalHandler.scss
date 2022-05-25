@@ -1,0 +1,22 @@
+.modal-wrapper {
+    position: absolute;
+    background-color: transparent;
+}
+
+.modal-background {
+    
+    width: 100vw;
+    height: 100vh;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+}
+
+.modal {
+
+}
