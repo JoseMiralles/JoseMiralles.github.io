@@ -13,6 +13,7 @@ const ProjectList = ({pl}: IParams) => {
     const setModal = useSetRecoilState(modalState);
 
     const onClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+        
         const modalName: string = (e.target as any).getAttribute("data-index");
         if (modalName.length) setModal(modalName);
     };

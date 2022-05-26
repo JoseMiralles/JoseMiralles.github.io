@@ -126,3 +126,11 @@ export const projectLists: IProjectList[] = [
         ]
     }
 ];
+
+export const projectDictionary: {[indexer: string]: IProject} = {};
+
+projectLists.forEach(pl => {
+    pl.projects.forEach(p => {
+        projectDictionary[p.name] = p;
+    });
+});
