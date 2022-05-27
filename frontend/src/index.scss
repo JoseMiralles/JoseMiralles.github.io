@@ -1,9 +1,10 @@
-
+@use "./values" as values;
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&family=Titillium+Web:wght@600&display=swap');
 
 a {
     text-decoration: none;
-    color: dimgray;
+    font-weight: bold;
+    // color: values.$main;
 }
 
 html {

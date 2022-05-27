@@ -4,8 +4,9 @@ export const technologiesArr = [
     "Node", "Jasmine",
     "React", "Redux", "Custom-Redux-Middleware",
     "JWT", "Refresh Tokens", "Identity Provider",
-    "C#", "ASP", "Xamarin", "SignalR",
-    "ThreeJS", "Blender", "Webpack"
+    "C#", "ASP", "Xamarin", "SignalR", "Enitity-Framework",
+    "ThreeJS", "Blender", "Webpack",
+    "SQL", "Mongo", "Mongoose", "Postgress"
 ] as const;
 
 /**
@@ -43,7 +44,7 @@ export const projectLists: IProjectList[] = [
             {
                 name: "CHAOS VR",
                 description: (
-                    "A web VR game built using Three.js and JavaScript. Optimized to run on Quest."
+                    "A web VR game built using Three.js and JavaScript. Optimized to run on Quest. VR headset required."
                 ),
                 image: "/img/chaos_vr.gif",
                 highlights: [
@@ -119,7 +120,7 @@ export const projectLists: IProjectList[] = [
                 ],
                 technologies: [
                     "React", "Redux", "TypeScript", "ASP", "C#", "HTML",
-                    "Custom-Redux-Middleware", "SignalR",
+                    "SQL", "Postgress", "Custom-Redux-Middleware", "SignalR",
                     "JWT", "Refresh Tokens", "Identity Provider"
                 ]
             }
