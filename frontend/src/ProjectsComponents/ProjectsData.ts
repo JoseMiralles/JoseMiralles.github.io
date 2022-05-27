@@ -21,7 +21,8 @@ export interface IProject {
     links: { title: string; url:string; } [];
     highlights?: { text: string; url?: string;} [];
     image?: string;
-    YTVideo?: string;
+    YTVideos?: string[];
+    images?: string[];
     /**
      * Used when technologies are passed in trough the url.
      * It is used to sort projects by relevance of technologies.
