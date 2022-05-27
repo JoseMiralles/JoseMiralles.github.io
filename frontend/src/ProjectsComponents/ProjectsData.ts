@@ -19,7 +19,7 @@ export interface IProject {
     name: string;
     description: string;
     links: { title: string; url:string; } [];
-    highlights?: string[];
+    highlights?: { text: string; url?: string;} [];
     image?: string;
     YTVideo?: string;
     /**
@@ -48,9 +48,18 @@ export const projectLists: IProjectList[] = [
                 ),
                 image: "/img/chaos_vr.gif",
                 highlights: [
-                    "Modeled all assets using Blender.",
-                    "Created asset pools to recycle actors such as enemies, projectiles, and sounds.",
-                    "Simulated physics manually without using a physics engine."
+                    {
+                        text: "Created asset pools to recycle actors such as enemies, projectiles, and sounds.",
+                        url: "https://github.com/JoseMiralles/Chaos-VR/blob/9cda4fc5c56e392c9530317b46c4c70ed2c36442/src/scripts/enemy_spawner.js#L87"
+                    },
+                    {
+                        text: "Simulated physics manually inside tick() functions, without using a physics engine.",
+                        url: "https://github.com/JoseMiralles/Chaos-VR/blob/main/src/scripts/enemy_robot.js#L171"
+                    },
+                    {
+                        text: "Modeled all assets using Blender.",
+                        url: "https://github.com/JoseMiralles/Chaos-VR#using-a-single-gltf-file-for-all-3d-assets"
+                    },
                 ],
                 links: [
                     {
@@ -77,8 +86,8 @@ export const projectLists: IProjectList[] = [
                 ),
                 image: "img/ts_test_gen.jpg",
                 highlights: [
-                    "Built generator with TypeScript and Node.",
-                    "Wrote all Jasmine tests using TypeScript."
+                    {text: "Built generator with TypeScript and Node."},
+                    {text: "Wrote all Jasmine tests using TypeScript."}
                 ],
                 links: [
                     {
@@ -103,10 +112,16 @@ export const projectLists: IProjectList[] = [
                     " by Carl Rippon. It includes a custom identity provider built with ASP.net."
                     ),
                 highlights: [
-                    "Identity provider built using ASP.net and C#.",
-                    "React app built using TypeScript and Redux",
-                    "Handled JWTs and Refresh Tokens in the front end using Axios middleware.",
-                    "Implemented realtime chat rooms / servers using SignalR in the back end, and Redux middleware in the front end."
+                    {text: "React app built using TypeScript and Redux"},
+                    {
+                        text: "Identity provider built using ASP.net and C#.",
+                        url: "https://github.com/JoseMiralles/InTalk/blob/main/backend/Controllers/AuthManagmentController.cs"
+                    },
+                    {
+                        text: "Handled JWTs and Refresh Tokens in the front end using Axios middleware.",
+                        url: "https://github.com/JoseMiralles/InTalk/blob/main/frontend/src/Util/SessionUtil.ts"
+                    },
+                    {text: "Implemented realtime chat rooms / servers using SignalR in the back end, and Redux middleware in the front end."}
                 ],
                 links: [
                     {

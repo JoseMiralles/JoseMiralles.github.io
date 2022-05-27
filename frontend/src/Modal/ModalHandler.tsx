@@ -74,7 +74,11 @@ const ModalHandler = () => {
                             (project.highlights) &&
                             <ul className="highlights">
                                 {project.highlights.map((h, i) => (
-                                    <li key={i}>{h}</li>
+                                    <li key={i}>{
+                                        (h.url) ?
+                                        <a href={h.url}>{h.text}</a> :
+                                        h.text
+                                    }</li>
                                 ))}
                             </ul>
                         }
