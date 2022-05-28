@@ -36,17 +36,19 @@ const ModalHandler = () => {
                             click-action="close-modal"
                             >X</div>
 
-                        {/* // Image / Title */}
+                        {/* Title */}
+                        <div id="modal-title">
+                            <h1>{project.name}</h1>
+                        </div>
+
+                        {/* // Image */}
                         {
-                            (project.image) ?
+                            (project.image) &&
                             <img
                                 className="project-image"
                                 src={project.image}
                                 alt={`${project.name} image`}
-                            /> :
-                            <div id="modal-title">
-                                <h1>{project.name}</h1>
-                            </div>
+                            />
                         }
 
                         {/* Tech tags */}
@@ -76,7 +78,7 @@ const ModalHandler = () => {
                                 {project.highlights.map((h, i) => (
                                     <li key={i}>{
                                         (h.url) ?
-                                        <a href={h.url}>{h.text}</a> :
+                                        <a target="_blank" href={h.url}>{h.text}</a> :
                                         h.text
                                     }</li>
                                 ))}

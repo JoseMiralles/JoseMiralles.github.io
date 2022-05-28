@@ -104,7 +104,7 @@ export const projectLists: IProjectList[] = [
     },
     {
         title: "Other Projects",
-        description: "Projects that are small, unfinished, or unpublished. And are created for the purpose of learning.",
+        description: "Projects that are small, unfinished, or unpublished. And were created for the purpose of learning.",
         projects: [
             {
                 name: "InTalk",
@@ -119,10 +119,25 @@ export const projectLists: IProjectList[] = [
                         url: "https://github.com/JoseMiralles/InTalk/blob/main/backend/Controllers/AuthManagmentController.cs"
                     },
                     {
-                        text: "Handled JWTs and Refresh Tokens in the front end using Axios middleware.",
+                        text: "Handled JWTs and Refresh Tokens in the front end using by Axios middleware.",
                         url: "https://github.com/JoseMiralles/InTalk/blob/main/frontend/src/Util/SessionUtil.ts"
                     },
-                    {text: "Implemented realtime chat rooms / servers using SignalR in the back end, and Redux middleware in the front end."}
+                    {
+                        text: "Implemented realtime chat rooms / servers using SignalR in the back end.",
+                        url: "https://github.com/JoseMiralles/InTalk/blob/main/backend/Hub/InTalkHub.cs"
+                    },
+                    {
+                        text: "Handled front-end real time connectivity using custom Redux middleware.",
+                        url: "https://github.com/JoseMiralles/InTalk/blob/main/frontend/src/Middleware/SignalRMiddleware.ts"
+                    },
+                    {
+                        text: "Created API unit tests.",
+                        url: "https://github.com/JoseMiralles/InTalk/blob/main/api-tests/ServerApiTests.cs"
+                    },
+                    {
+                        text: "Used dependency injection to separate data access from controllers by using repositories.",
+                        url: "https://github.com/JoseMiralles/InTalk/blob/main/backend/Data/ServerRepository.cs"
+                    }
                 ],
                 links: [
                     {
@@ -135,9 +150,10 @@ export const projectLists: IProjectList[] = [
                     }
                 ],
                 technologies: [
-                    "React", "Redux", "TypeScript", "ASP", "C#", "HTML",
+                    "React", "Redux", "TypeScript", "ASP", "C#",
                     "SQL", "Postgress", "Custom-Redux-Middleware", "SignalR",
-                    "JWT", "Refresh Tokens", "Identity Provider"
+                    "JWT", "Refresh Tokens", "Identity Provider", "HTML", "CSS",
+                    "SCSS"
                 ]
             }
         ]
