@@ -47,7 +47,10 @@ export const projectLists: IProjectList[] = [
                     "A web VR game built using Three.js and JavaScript. Optimized to run on Quest. VR headset required."
                 ),
                 images: ["/img/chaos_vr.gif"],
-                YTVideos: ["https://www.youtube.com/embed/sgtoEU0PioA"],
+                YTVideos: [
+                    "https://www.youtube.com/embed/sgtoEU0PioA",
+                    "https://www.youtube.com/embed/KXy4ktaRr2o"
+                ],
                 highlights: [
                     {
                         text: "Created asset pools to recycle actors such as enemies, projectiles, and sounds.",

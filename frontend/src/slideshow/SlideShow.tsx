@@ -47,7 +47,6 @@ const SlideShow = (
     const thumbNails = media ? (
         media.map((m, i) => {
             let src = "";
-            let classAppend = (position === i) ? "selected" : "";
             switch (m.type) {
                 case "YTVIDEO":
                     src = "img/yticon.png";
@@ -56,7 +55,7 @@ const SlideShow = (
                     src = m.url;
                     break;
             }
-            return <img className={("thumbnail " + classAppend)} src={src} key={i} data-index={i}/>
+            return <img className="thumbnail" src={src} key={i} data-index={i}/>
         })
     ) : [<span></span>];
 
@@ -85,9 +84,9 @@ const YTVideoEmbed = (
         height="315"
         src={url}
         title="YouTube video player"
-        // frameborder="0"
+        frameBorder={0}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        // allowfullscreen
+        allowFullScreen
         ></iframe>
 );
 
