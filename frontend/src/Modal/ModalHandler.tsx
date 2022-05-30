@@ -2,31 +2,31 @@
 import React from "react";
 
 import "./ModalHandler.scss";
-import { useRecoilState, useRecoilValue } from "recoil";
-import { modalState } from "../state";
-import { IProject, projectDictionary, projectLists } from "../ProjectsComponents/ProjectsData";
-import { Console } from "console";
+import { IProject, projectDictionary } from "../ProjectsComponents/ProjectsData";
 import SlideShow from "../slideshow/SlideShow";
+import { useNavigate, useParams } from "react-router-dom";
 
 const ModalHandler = () => {
 
-    const [modal, setModal] = useRecoilState(modalState);
+    const navigate = useNavigate();
+
+    const projectName = useParams<{projectName: string}>().projectName;
+    if (!projectName) return (<span></span>);
+    const project: IProject | undefined = projectDictionary[projectName];
+    if (!project) return (<span></span>);
 
     const handleClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-
         const attribute = (e.target as any).getAttribute("click-action");
-        if (attribute === "close-modal") setModal("");
+        if (attribute === "close-modal") navigate("/");
     };
-
-    const project: IProject | undefined = projectDictionary[modal];
 
     return (
         <div className="modal-wrapper">
             { (project !== undefined) ?
 
                 <div
-                    className="modal-background"
                     onClick={handleClick}
+                    className="modal-background"
                     click-action="close-modal"
                     >
                     <div className="modal">

@@ -88,7 +88,7 @@ export const projectLists: IProjectList[] = [
                 description: (
                     "A test generator wich creates a set of typescript problems and Jasmine.js tests from a popular curated list of 75 problems."
                 ),
-                images: ["img/ts_test_gen.jpg"],
+                images: ["/img/ts_test_gen.jpg"],
                 highlights: [
                     {text: "Built generator with TypeScript and Node."},
                     {text: "Wrote all Jasmine tests using TypeScript."}

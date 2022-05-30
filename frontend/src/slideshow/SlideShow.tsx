@@ -49,7 +49,7 @@ const SlideShow = (
             let src = "";
             switch (m.type) {
                 case "YTVIDEO":
-                    src = "img/yticon.png";
+                    src = "/img/yticon.png";
                     break;
                 case "IMAGE":
                     src = m.url;

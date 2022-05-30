@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useSetRecoilState } from "recoil";
 import { modalState } from "../state";
 
@@ -10,14 +11,6 @@ interface IParams {
 
 const ProjectList = ({pl}: IParams) => {
 
-    const setModal = useSetRecoilState(modalState);
-
-    const onClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-        
-        const modalName: string = (e.target as any).getAttribute("data-index");
-        if (modalName.length) setModal(modalName);
-    };
-
     return (
         <div className="project-section">
 
@@ -28,11 +21,12 @@ const ProjectList = ({pl}: IParams) => {
             )}
 
             <div
-                onClick={onClick}
+                // onClick={onClick}
                 className="project-list">
 
                 {pl.projects.map((p, idx) => (
-                    <div
+                    <Link
+                        to={`project/${p.name}`}
                         key={idx}
                         data-index={p.name}
                         className="project-item-card">
@@ -57,7 +51,7 @@ const ProjectList = ({pl}: IParams) => {
                             className="foreground-gradient"
                         ></div>
                         
-                    </div>
+                    </Link>
                 ))}
 
             </div>
