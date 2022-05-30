@@ -31,18 +31,22 @@ const ProjectList = ({pl}: IParams) => {
                 onClick={onClick}
                 className="project-list">
 
-                {pl.projects.map(p => (
+                {pl.projects.map((p, idx) => (
                     <div
+                        key={idx}
                         data-index={p.name}
                         className="project-item-card">
                         
-                        {p.image && ( <img className="project-card-image" src={p.image}/> )}
+                        {/* Project Image */}
+                        {(p.images && p.images[0]) && (
+                            <img className="project-card-image" src={p.images[0]}/>
+                        )}
 
                         <div className="project-card-info">
                             <div className="project-top-bar">
                                 <span className="project-name">{p.name}</span>
                                 {p.technologies.map((t, i) => (
-                                    <span className="tech-pill">{t}</span>
+                                    <span key={i} className="tech-pill">{t}</span>
                                     ))}
                             </div>
                             <div className="project-description">{p.description}</div>

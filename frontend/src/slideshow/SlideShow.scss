@@ -1,0 +1,36 @@
+
+@use "../values.scss" as values;
+
+.slideshow {
+
+    max-width: 100%;
+    width: 100%;
+
+    & > img, & > iframe {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .thumbnails {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+
+        .thumbnail {
+
+            width: 100px;
+            height: 60px;
+            padding: 10px;
+            background-color: values.$white2;
+
+            object-fit:contain;
+
+            &:hover, &.selected {
+                // opacity: 0.7;
+                background-color: values.$main;
+            }
+        }
+    }
+}

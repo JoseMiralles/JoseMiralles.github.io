@@ -6,6 +6,7 @@ import { useRecoilState, useRecoilValue } from "recoil";
 import { modalState } from "../state";
 import { IProject, projectDictionary, projectLists } from "../ProjectsComponents/ProjectsData";
 import { Console } from "console";
+import SlideShow from "../slideshow/SlideShow";
 
 const ModalHandler = () => {
 
@@ -41,15 +42,8 @@ const ModalHandler = () => {
                             <h1>{project.name}</h1>
                         </div>
 
-                        {/* // Image */}
-                        {
-                            (project.image) &&
-                            <img
-                                className="project-image"
-                                src={project.image}
-                                alt={`${project.name} image`}
-                            />
-                        }
+                        {/* // Slideshow */}
+                        <SlideShow YTVideos={project.YTVideos} images={project.images}/>
 
                         {/* Tech tags */}
                         <div className="tech-list">

@@ -20,7 +20,6 @@ export interface IProject {
     description: string;
     links: { title: string; url:string; } [];
     highlights?: { text: string; url?: string;} [];
-    image?: string;
     YTVideos?: string[];
     images?: string[];
     /**
@@ -47,7 +46,8 @@ export const projectLists: IProjectList[] = [
                 description: (
                     "A web VR game built using Three.js and JavaScript. Optimized to run on Quest. VR headset required."
                 ),
-                image: "/img/chaos_vr.gif",
+                images: ["/img/chaos_vr.gif"],
+                YTVideos: ["https://www.youtube.com/embed/sgtoEU0PioA"],
                 highlights: [
                     {
                         text: "Created asset pools to recycle actors such as enemies, projectiles, and sounds.",
@@ -85,7 +85,7 @@ export const projectLists: IProjectList[] = [
                 description: (
                     "A test generator wich creates a set of typescript problems and Jasmine.js tests from a popular curated list of 75 problems."
                 ),
-                image: "img/ts_test_gen.jpg",
+                images: ["img/ts_test_gen.jpg"],
                 highlights: [
                     {text: "Built generator with TypeScript and Node."},
                     {text: "Wrote all Jasmine tests using TypeScript."}
