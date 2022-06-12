@@ -20,6 +20,7 @@
 
     -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
+    background: #323232a6;
 
     z-index: 10;
 }
@@ -40,12 +41,12 @@
     margin-bottom: 100px;
 
     .close-modal-button {
-        position: absolute;
-        right: 0;
-        top: 0;
-        background-color: red;
+        // width: 100%;
+        // text-align: right;
+        align-self: flex-end;
+        // background-color: red;
         padding: 10px;
-        color: white;
+        // color: white;
         cursor: pointer;
         font-weight: bold;
     }
