@@ -6,18 +6,16 @@ import ProjectSection from './ProjectsComponents/ProjectSection';
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
+    <div className="App">
 
-        <Routes>
-          <Route path="project/:projectName" element={<ModalHandler />} />
-        </Routes>
+      <Routes>
+        <Route path="project/:projectName" element={<ModalHandler />} />
+      </Routes>
 
-        <HeroSection />
-        <ProjectSection />
+      <HeroSection />
+      <ProjectSection />
 
-      </div>
-    </BrowserRouter>
+    </div>
   );
 }
 

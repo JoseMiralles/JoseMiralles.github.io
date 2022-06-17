@@ -328,6 +328,7 @@ export const projectLists: IProjectList[] = [
                         url: "https://github.com/JoseMiralles/Splunk-React-TypeScript-Demo/blob/main/appserver/static/client/src/util/searchUtil.ts#L24"
                     }
                 ],
+                YTVideos: ["https://www.youtube.com/embed/gPja51_O0Z4"],
                 links: [
                     {
                         title: "Video Demo",
