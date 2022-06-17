@@ -2,14 +2,15 @@
 export const technologiesArr = [
     "HTML", "CSS", "SCSS", "JavaScript", "TypeScript",
     "Node", "Jasmine", "API", "REST", "Asynchronous",
-    "React", "Redux", "Custom-Redux-Middleware",
+    "React", "React-Native", "Redux", "Custom-Redux-Middleware", "Recoil",
     "JWT", "Refresh Tokens", "Identity Provider",
     "C#", "ASP", "Xamarin", "SignalR", "Enitity-Framework", "DotNet",
     "ThreeJS", "Blender", "Webpack",
     "SQL", "Mongo", "Mongoose", "Postgress",
     "Ruby", "Rails",
     "Mobile-Development",
-    "PHP", "Laravel"
+    "PHP", "Laravel",
+    "iOS", "Android"
 ] as const;
 
 /**
@@ -149,6 +150,25 @@ export const projectLists: IProjectList[] = [
                 ],
                 technologies: [
                     "React", "Redux", "JavaScript", "SQL", "API", "REST", "Ruby", "Rails", "SCSS"
+                ]
+            },
+            {
+                name: "Minesweeper App",
+                description: "A Minesweeper mobile app made with React Native and Typescript.",
+                links: [
+                    {
+                        title: "Try with Expo",
+                        url: "https://expo.dev/@josemiralles/minesweeper"
+                    },
+                    {
+                        title: "GitHub",
+                        url: "https://github.com/JoseMiralles/Minesweeper-React-Native"
+                    }
+                ],
+                technologies: ["React-Native", "TypeScript", "Recoil", "React", "iOS", "Android"],
+                images: [
+                    "/img/mine1.png",
+                    "/img/mine2.png"
                 ]
             },
             {
