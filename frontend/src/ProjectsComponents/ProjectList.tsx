@@ -28,6 +28,7 @@ const ProjectList = ({pl}: IParams) => {
     const projectComparator = (
         a: IProject, b: IProject
     ): number => {
+        if (techSort.length < 1) return 0;
         const scoreA = a.techMatchRating ?? 0;
         const scoreB = b.techMatchRating ?? 0;
         return scoreA >= scoreB ? -1 : 1;
