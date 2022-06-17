@@ -1,15 +1,34 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useSetRecoilState } from "recoil";
-import { modalState } from "../state";
+import { useRecoilValue, useSetRecoilState } from "recoil";
+import { modalState, techFiltersState } from "../state";
 
 import { IProject, IProjectList } from "./ProjectsData";
+import TechnologiesList from "./TechnologiesList";
 
 interface IParams {
     pl: IProjectList
 }
 
 const ProjectList = ({pl}: IParams) => {
+
+    const techSort = useRecoilValue(techFiltersState);
+
+    pl.projects.forEach(p => {
+        let score = 0;
+        p.technologies.forEach(t => {
+            if (techSort.includes(t)) score ++;
+        });
+        p.techMatchRating = score;
+    });
+
+    const projectComparator = (
+        a: IProject, b: IProject
+    ): number => {
+        const scoreA = a.techMatchRating ?? 0;
+        const scoreB = b.techMatchRating ?? 0;
+        return scoreA >= scoreB ? -1 : 1;
+    };
 
     return (
         <div className="project-section">
@@ -20,11 +39,13 @@ const ProjectList = ({pl}: IParams) => {
                 </div>
             )}
 
+            <TechnologiesList/>
+
             <div
                 // onClick={onClick}
                 className="project-list">
 
-                {pl.projects.map((p, idx) => (
+                {pl.projects.sort(projectComparator).map((p, idx) => (
                     <Link
                         to={`project/${p.name}`}
                         key={idx}
