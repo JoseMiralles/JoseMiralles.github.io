@@ -1,7 +1,7 @@
 
 export const technologiesArr = [
     "HTML", "CSS", "SCSS", "JavaScript", "TypeScript",
-    "Node", "Jasmine", "API", "REST", "Asynchronous",
+    "Node", "Jasmine", "API", "REST", "Asynchronous", "CRUD",
     "React", "React-Native", "Redux", "Custom-Redux-Middleware", "Recoil",
     "JWT", "Refresh Tokens", "Identity Provider",
     "C#", "ASP", "Xamarin", "SignalR", "Enitity-Framework", "DotNet",
@@ -10,7 +10,7 @@ export const technologiesArr = [
     "Ruby", "Rails",
     "Mobile-Development",
     "PHP", "Laravel",
-    "iOS", "Android"
+    "iOS", "Android", "VR", "Unit-Tests"
 ] as const;
 
 /**
@@ -84,7 +84,7 @@ export const projectLists: IProjectList[] = [
                     }
                 ],
                 technologies: [
-                    "JavaScript", "ThreeJS", "Blender", "Webpack"
+                    "JavaScript", "ThreeJS", "Blender", "Webpack", "VR"
                 ]
             },
             {
@@ -110,7 +110,7 @@ export const projectLists: IProjectList[] = [
                     },
                 ],
                 technologies: [
-                    "TypeScript", "Node", "Jasmine"
+                    "TypeScript", "Node", "Jasmine", "Unit-Tests"
                 ]
             },
             {
@@ -149,7 +149,7 @@ export const projectLists: IProjectList[] = [
                     },
                 ],
                 technologies: [
-                    "React", "Redux", "JavaScript", "SQL", "API", "REST", "Ruby", "Rails", "SCSS"
+                    "React", "Redux", "JavaScript", "SQL", "API", "REST", "Ruby", "Rails", "SCSS", "Asynchronous", "CSS", "CRUD"
                 ]
             },
             {
@@ -165,7 +165,7 @@ export const projectLists: IProjectList[] = [
                         url: "https://github.com/JoseMiralles/Minesweeper-React-Native"
                     }
                 ],
-                technologies: ["React-Native", "TypeScript", "Recoil", "React", "iOS", "Android"],
+                technologies: ["React-Native", "TypeScript", "Recoil", "React", "iOS", "Android", "Mobile-Development", "JavaScript"],
                 images: [
                     "/img/mine1.png",
                     "/img/mine2.png"
@@ -203,13 +203,13 @@ export const projectLists: IProjectList[] = [
                     }
                 ],
                 technologies: [
-                    "TypeScript", "ThreeJS", "React", "SCSS", "Blender"
+                    "TypeScript", "ThreeJS", "React", "SCSS", "Blender", "CSS", "JavaScript"
                 ]
             },
             {
                 name: "Location Score",
                 description: "A Node.js app that merges different datasets into a single one, and also assings a score to each datapoint. The goal is to make it easier to find an optimal location to open a new office based on a few metrics.",
-                technologies: ["TypeScript", "Node"],
+                technologies: ["TypeScript", "Node", "JavaScript"],
                 highlights: [
                     {
                         text: "Implemented 4 methods to parse each file, to then return a dictionary like object were each key is a county code, and each value an object with a metric, and a coefficient score.",
@@ -262,7 +262,7 @@ export const projectLists: IProjectList[] = [
                     },
                 ],
                 technologies: [
-                    "Xamarin", "C#", "DotNet", "Mobile-Development"
+                    "Xamarin", "C#", "DotNet", "Mobile-Development", "Android"
                 ]
             },
         ]
@@ -315,7 +315,7 @@ export const projectLists: IProjectList[] = [
                     "React", "Redux", "TypeScript", "ASP", "C#",
                     "SQL", "Postgress", "Custom-Redux-Middleware", "SignalR",
                     "JWT", "Refresh Tokens", "Identity Provider", "HTML", "CSS",
-                    "SCSS", "Asynchronous"
+                    "SCSS", "Asynchronous", "JavaScript", "Unit-Tests"
                 ]
             },
             {
@@ -346,7 +346,7 @@ export const projectLists: IProjectList[] = [
                     }
                 ],
                 images: ["/img/instavel/logo.png"],
-                technologies: ["PHP", "Laravel", "API", "REST"],
+                technologies: ["PHP", "Laravel", "API", "REST", "CSS", "JavaScript"],
                 highlights: [
                     {text: "Followed the MVC design pattern."},
                     {text: "Followed RESTful routing to perform CRUD operations on an SQL database."},
