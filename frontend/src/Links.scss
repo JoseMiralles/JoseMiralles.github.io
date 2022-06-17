@@ -1,0 +1,12 @@
+.icon-links {
+    display: flex;
+    flex-direction: row;
+
+    & > a {
+        padding: 7px;
+
+        & > img:hover {
+            opacity: 0.3;
+        }
+    }
+}

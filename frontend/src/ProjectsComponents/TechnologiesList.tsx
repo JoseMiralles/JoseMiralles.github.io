@@ -2,7 +2,7 @@
 import React from "react";
 import { useRecoilState } from "recoil";
 import { techFiltersState } from "../state";
-import { technologyTypes } from "./ProjectsData";
+import { technologyTypes } from "../data/ProjectsData";
 import "./TechnologiesList.scss"
 
 const TechnologiesList = (

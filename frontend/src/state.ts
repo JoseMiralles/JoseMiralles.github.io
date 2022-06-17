@@ -1,5 +1,5 @@
 import { atom } from "recoil";
-import { technologyTypes } from "./ProjectsComponents/ProjectsData";
+import { technologyTypes } from "./data/ProjectsData";
 
 export const modalState = atom({
     key: "modalState",

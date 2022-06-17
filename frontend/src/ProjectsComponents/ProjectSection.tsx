@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ProjectList from "./ProjectList";
 
 import "./Projects.scss";
-import { projectLists } from "./ProjectsData";
+import { projectLists } from "../data/ProjectsData";
 
 const ProjectSection = () => {
 

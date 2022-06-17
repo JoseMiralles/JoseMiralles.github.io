@@ -2,7 +2,7 @@
 import React from "react";
 
 import "./ModalHandler.scss";
-import { IProject, projectDictionary } from "../ProjectsComponents/ProjectsData";
+import { IProject, projectDictionary } from "../data/ProjectsData";
 import SlideShow from "../slideshow/SlideShow";
 import { useNavigate, useParams } from "react-router-dom";
 

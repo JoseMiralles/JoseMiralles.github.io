@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useRecoilValue, useSetRecoilState } from "recoil";
 import { modalState, techFiltersState } from "../state";
 
-import { IProject, IProjectList, technologyTypes } from "./ProjectsData";
+import { IProject, IProjectList, technologyTypes } from "../data/ProjectsData";
 import TechnologiesList from "./TechnologiesList";
 
 interface IParams {
