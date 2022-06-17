@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer';
 import HeroSection from './HeroSection';
 import ModalHandler from './Modal/ModalHandler';
 import ProjectSection from './ProjectsComponents/ProjectSection';
@@ -14,6 +15,7 @@ function App() {
 
       <HeroSection />
       <ProjectSection />
+      <Footer/>
 
     </div>
   );

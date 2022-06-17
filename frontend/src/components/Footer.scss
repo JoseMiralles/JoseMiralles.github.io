@@ -1,0 +1,29 @@
+@use "../values" as values;
+
+.footer {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    background-color: values.$black1;
+
+    a {
+        color: values.$white1;
+        cursor: pointer;
+        padding: 44px 66px 44px 66px;
+        transition: background 0.5s;
+
+        &:hover {
+            font-style: italic;
+            background-color: values.$black2;
+            &::after {
+                content: " />";
+            }
+            &::before {
+                content: "< ";
+            }
+        }
+    }
+}
