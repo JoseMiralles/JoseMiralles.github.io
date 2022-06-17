@@ -6,8 +6,16 @@
     background-color: transparent;
 }
 
+@keyframes fadeInAnim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .modal-background {
-    
     width: 100vw;
     min-height: 100vh;
     height: 100%;
@@ -28,6 +36,7 @@
 }
 
 .modal {
+    animation: fadeInAnim ease 0.5s;
     display: flex;
     flex-direction: column;
     justify-content: center;
