@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useRecoilValue, useSetRecoilState } from "recoil";
 import { modalState, techFiltersState } from "../state";
 
-import { IProject, IProjectList } from "./ProjectsData";
+import { IProject, IProjectList, technologyTypes } from "./ProjectsData";
 import TechnologiesList from "./TechnologiesList";
 
 interface IParams {
@@ -14,9 +14,12 @@ const ProjectList = ({pl}: IParams) => {
 
     const techSort = useRecoilValue(techFiltersState);
 
+    const techHash = new Set<technologyTypes>();
+
     pl.projects.forEach(p => {
         let score = 0;
         p.technologies.forEach(t => {
+            techHash.add(t)
             if (techSort.includes(t)) score ++;
         });
         p.techMatchRating = score;
@@ -30,6 +33,14 @@ const ProjectList = ({pl}: IParams) => {
         return scoreA >= scoreB ? -1 : 1;
     };
 
+    const techComparator = (
+        a: technologyTypes, b: technologyTypes
+    ) => {
+        const aIsSelected = techSort.includes(a) ? 1 : -1;
+        const bIsSelected = techSort.includes(b) ? 1 : -1;
+        return bIsSelected - aIsSelected;
+    };
+
     return (
         <div className="project-section">
 
@@ -39,7 +50,7 @@ const ProjectList = ({pl}: IParams) => {
                 </div>
             )}
 
-            <TechnologiesList/>
+            <TechnologiesList technologies={Array.from(techHash).sort(techComparator)}/>
 
             <div
                 // onClick={onClick}
@@ -51,6 +62,13 @@ const ProjectList = ({pl}: IParams) => {
                         key={idx}
                         data-index={p.name}
                         className="project-item-card">
+
+                        { // Project match rating
+                            (p.techMatchRating !== undefined && p.techMatchRating > 0)
+                                && <span className="rating">
+                                    {"matches: " + p.techMatchRating}
+                                </span>
+                        }
                         
                         {/* Project Image */}
                         {(p.images && p.images[0]) && (

@@ -2,10 +2,12 @@
 import React from "react";
 import { useRecoilState } from "recoil";
 import { techFiltersState } from "../state";
-import { technologiesArr } from "./ProjectsData";
+import { technologyTypes } from "./ProjectsData";
 import "./TechnologiesList.scss"
 
-const TechnologiesList = () => {
+const TechnologiesList = (
+    {technologies}: {technologies: technologyTypes[]}
+) => {
     
     const [filters, setFilters] = useRecoilState(techFiltersState);
 
@@ -17,7 +19,7 @@ const TechnologiesList = () => {
             setFilters(filters.concat([tech]));
     };
 
-    const mapped = technologiesArr.map((t, i) => {
+    const mapped = technologies.map((t, i) => {
         const trail = filters.includes(t) ? "selected" : "";
         return (
             <div className={"tech " + trail} key={i}>
@@ -28,6 +30,7 @@ const TechnologiesList = () => {
 
     return (
         <div id="tech-list" onClick={onClick}>
+            <div id="sort-text">Sort:</div>
             {mapped}
         </div>
     );
