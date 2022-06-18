@@ -78,7 +78,7 @@ const ProjectList = ({pl}: IParams) => {
 
                         <div className="project-card-info">
                             <div className="project-top-bar">
-                                <span className="project-name">{p.name}</span>
+                                <span className="project-name">{`< ${p.name} />`}</span>
                                 {p.technologies.map((t, i) => (
                                     <span key={i} className="tech-pill">{t}</span>
                                     ))}

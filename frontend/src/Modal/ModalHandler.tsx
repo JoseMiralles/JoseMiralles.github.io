@@ -39,7 +39,7 @@ const ModalHandler = () => {
 
                         {/* Title */}
                         <div id="modal-title">
-                            <h1>{project.name}</h1>
+                            <div>{project.name}</div>
                         </div>
 
                         {/* // Slideshow */}

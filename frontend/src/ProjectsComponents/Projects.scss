@@ -66,7 +66,7 @@
         align-items: flex-start;
         height: $project-card-height;border: 1px solid values.$white2;
         border-right: none;
-        transition: all 0.1s ease-in;
+        transition: all 0.1s ease-out;
 
         .rating {
             position: absolute;
@@ -108,24 +108,8 @@
         }
         
         &:hover {
-            // border-left: solid 1px black;
-            // background-color: values.$main;
-            // color: white !important;
             cursor: pointer;
-            margin-left: -15px;
-            
-            // .foreground-gradient {
-            //     // background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
-            //     // background: linear-gradient(-90deg, rgba(47,79,79,0) 73%, rgba(47,79,79,1) 100%);
-            // }
-
-            // .tech-pill {
-            //     // background-color: transparent !important;
-            // }
-
-            // .project-description {
-            //     // color: values.$white2;
-            // }
+            margin-left: -30px;
         }
 
         .project-top-bar {
