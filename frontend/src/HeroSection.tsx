@@ -12,7 +12,7 @@ const HeroSection = () => {
 
             <Links/>
 
-            <div id="hero-jobtitle">Systems Engineer</div>
+            <div id="hero-jobtitle">Software Engineer</div>
             
             <div id="hero-company">Bank of America</div>
 
